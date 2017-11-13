@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { LogInComponent } from './logIn/logIn.component';
+import { LogInComponent } from '../logIn/logIn.component';
 
-import { CabeceraComponent } from './Index/cabecera/cabecera.component';
-import { FooterComponent } from './Index/footer/footer.component';
+import { CabeceraComponent } from './cabecera/cabecera.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContenidoComponent } from './contenido/contenido.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './Index/footer/footer.component';
     AppComponent,
     LogInComponent,
     CabeceraComponent,
-    FooterComponent
+    FooterComponent,
+    ContenidoComponent
 ],
   imports: [
     BrowserModule,

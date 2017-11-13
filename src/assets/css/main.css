@@ -1305,7 +1305,7 @@ a{
 #atraccion-imagen > img, #atraccion-imagen-adicional > img, #blog-imagen > img, #blog-imagen-adicional > img{width:100%;align-self:center;-webkit-align-self:center;}
 #atraccion-imagen .mapa{display:none;}
 #atraccion-imagen .mapa2{display:block;align-self:center;-webkit-align-self:center;width:100%;height:auto;margin:0;padding:0;}
-#atraccion-imagen-adicional, , #blog-imagen-adicional{width:100%;margin:0;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#atraccion-imagen-adicional, #blog-imagen-adicional{width:100%;margin:0;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
 #lista-hoteles{display:flex;padding:5px;width:calc(50% - 5px - 5px);}
 #atraccion-bloque-lateral{display:none;}
 #atraccion-publicidad-top{display:none;}
