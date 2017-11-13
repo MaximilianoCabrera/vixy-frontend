@@ -1,0 +1,41 @@
+<head>
+  <title>Vixy Guias</title>
+  <meta charset="utf-8">
+  <!--<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">-->
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323:100,200,300,400,500,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700">
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- jquery -->
+  <script type="text/javascript" src="../../../assets/jSticky-master/jquery-1.8.1.min.js"></script>
+</head>
+
+<section id="index-lateral">
+
+  <span class="titulo-seccion">Entradas populares</span>
+
+  <div *ngFor="let entrada of entradas;let i=index">
+    <a href="//guiadejapon.es/guia-viaje-japon">
+      <div id="blog-populares">
+        <img src="../../../../assets/images/{{entrada.Imagen}}">
+        <div class="texto">
+          <span class="numero">{{i+1}}</span>
+          <h2 class="titulo">{{entrada.Titulo}}</h2>
+        </div>
+        <!-- texto -->
+      </div>
+      <!-- blog-populares -->
+    </a>
+  </div>
+
+</section>

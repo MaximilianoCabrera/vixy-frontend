@@ -3,21 +3,25 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
 import { LogInComponent } from '../logIn/logIn.component';
 
 import { CabeceraComponent } from './cabecera/cabecera.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContenidoComponent } from './contenido/contenido.component';
+import { BarralateralComponent } from './contenido/barralateral/barralateral.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    // AppComponent,
     LogInComponent,
     CabeceraComponent,
-    FooterComponent,
-    ContenidoComponent
+    ContenidoComponent,
+    BarralateralComponent,
+    FooterComponent
 ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { ContenidoComponent } from './contenido/contenido.component';
     HttpModule
   ],
   // We will need to expose the API, and only a provider can do that.
-  providers: [AppComponent],
-  bootstrap: [AppComponent]
+  providers: [ContenidoComponent],
+  bootstrap: [ContenidoComponent]
 })
 export class AppModule { }
