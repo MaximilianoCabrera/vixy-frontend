@@ -1,0 +1,1381 @@
+html{
+    margin:0;
+    padding:0;
+    }
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    }
+
+#body{
+    width:auto;
+    min-height:100%;
+    margin:0 auto;
+    padding:0;
+    background-color:#fff;
+    max-width:1080px;
+    }
+
+a{
+    text-decoration:none;
+    }
+
+.pin{
+    color:#c73c32;
+    }
+
+.subpin{
+    color:#d2625a;
+    }
+
+.fa-camera, .fa-bus, .fa-ticket, .fa-male, .fa-plane, .fa-volume-up, .fa-clock-o, .fa-calendar-times-o, .fa-at, .fa-circle-o, .fa-close, .fa-train, .fa-phone, .fa-cab, .fa-ship, .texto .fa-info{
+    color:#888;
+    }
+
+#hotel .fa-star, #hotel .fa-star-half-o, #hotel .fa-star-o{
+    color:#ffbc00;
+    }
+
+.fa-info-circle{
+    color:#0896ff;
+    }
+
+.fa-h3, .fa-exclamation-triangle{
+    color:#d2625a!important;
+    }
+
+.anchor{
+    display:block;
+    position:relative;
+    top:-60px;visibility:hidden;
+    }
+
+.no{
+    display:none!important;
+    }
+
+.cap{
+    text-transform:capitalize;
+    }
+
+.capitalize{
+    text-transform:capitalize;
+    }
+
+.kansai{
+    border-color:#d2625a!important;
+    }
+
+.hokkaido{
+    border-color:#d2625a!important;
+    }
+
+.kyushu{
+    border-color:#d2625a!important;
+    }
+
+.shikoku{
+    border-color:#d2625a!important;
+    }
+
+.chubu{
+    border-color:#d2625a!important;
+    }
+
+.kanto{
+    border-color:#d2625a!important;
+    }
+
+.okinawa{
+    border-color:#d2625a!important;
+    }
+
+.tohoku{
+    border-color:#d2625a!important;
+    }
+
+/*************/
+/* NAVEGADOR */
+#envoltorio-navegador{
+    display:inline-flex;
+    display:-webkit-inline-flex;
+    width:100%;
+    height:auto;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    border-bottom:1px solid #ddd;
+    }
+/*Configuración del Navegador*/
+#navegador{
+    width:1080px;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    cursor:default;
+    }
+
+/*Logo del Navegador*/
+#navegador .logo{
+    width:200px!important;
+    width:auto;
+    padding-top:11px;
+    }
+
+/*Links Cabecera UL del Navegador*/
+#navegador-links{
+    position:relative;
+    float:right;
+    margin-top:0;
+    padding-top:0;
+    }
+
+/*Cabecera del UL del Navegador*/
+#navegador-ul{
+    display:inline-block;
+    float:left;
+    text-align:center;
+    list-style:none;
+    width:auto;
+    margin-right:10px;
+    padding-left:0;
+    margin-top:7px;
+    }
+
+/*Titulos de la Cabecera del UL del Navegador ---- PAISES, CIUDADES, ANTES DE VIAJAR, BLOG, ECT*/
+#navegador-ul .list{
+    list-style:none;
+    display:inline-block;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:12px;
+    letter-spacing:1px;
+    padding:10.5pt 0 9.5pt;
+    margin:-7px 8pt 0;
+    text-transform:uppercase;
+    border-top:3px solid transparent;
+    }
+
+/*Titulos de la Cabecera del UL visitados del Navegador*/
+#navegador-ul .list:visited{
+    color:#333;
+    }
+
+#navegador-ul .list:link{
+    color:#333;
+    }
+
+/*Color Titulos dentro de la Cabecera del UL del Navegador*/
+#navegador-ul .list:hover{
+    cursor:pointer;
+    transition:0.3s;
+    border-top:3px solid #d2625a;
+    }
+
+/*Acomodo de los SUB LINKS del primer LINK del UL del Navegador --- Paises (acomodarle el tamaño del fondo, etc)*/
+#navegador-sub-link{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:8pt;
+    z-index:1000;
+    max-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+
+
+/*Acomodo de los SUB LINKS del segundo LINK del UL del Navegador --- Ciudades*/
+#navegador-sub-link-2{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:100px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Acomodo de los SUB LINKS del tercer LINK del UL del Navegador --- Antes de Viajar*/
+#navegador-sub-link-3{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:195px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Acomodo de los SUB LINKS del cuarto LINK del UL del Navegador --- Blog*/
+#navegador-sub-link-4{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:260px;
+    z-index:1000;
+    width:auto;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Info dentro del SUB LINK del cuarto LINK del UL del Navegador -- Indica la cantidad de posts nuevos en cada sección*/
+#navegador-sub-link-4 .numero{
+    width:auto;
+    height:auto;
+    position:relative;
+    float:right;
+    padding:0 4.5pt;
+    background-color:#fab23a;
+    color:#fff;
+    border-radius:3px;
+    margin-left:17px;
+    }
+/*Configuración LINKS dentro de la Cabecera del UL del Navegador*/
+#navegador-sub-ul{
+    background-color:#fff;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    list-style:none;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:15px;
+    padding:0;
+    }
+/*Forma ordenamiento al pasar por arriba del primer LINK*/
+#list-ciudades:hover #navegador-sub-link{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del segundo LINK*/
+#list-regiones:hover #navegador-sub-link-2{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del tercer LINK*/
+#list-herramientas:hover #navegador-sub-link-3{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del cuarto LINK*/
+#list-blog:hover #navegador-sub-link-4{
+    display:block;
+    }
+/*Configuración SUB LINKS dentro de la Cabecera del UL del Navegador*/
+#navegador-sub-ul .sub-list{
+    padding:5pt 12pt;
+    text-align:left;
+    transition:0.1s;
+    color:#676A6D;
+    text-transform:none;
+    letter-spacing:0px;
+    }
+
+#navegador-sub-ul .sub-list:hover{
+    background-color:#d2625a;
+    transition:0.1s;
+    color:#fff;
+    cursor:pointer;
+    }
+
+#navegador-sub-ul hr{
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    padding:0;
+    margin:4px 0 0;
+    }
+
+#navegador .nav-li-buscador{
+    list-style:none;
+    float:right;
+    z-index:999;
+    margin-top:13.5px;
+    }
+
+#busqueda{
+    border:none;
+    padding:2px 10px;
+    margin-top:-1.7px;
+    display:left;
+    background-color:transparent;
+    color:#333;
+    width:120px;
+    border-left:2px solid #d2625a;
+    }
+
+#navegador input{
+    position:relative;
+    float:left;
+    color:#555;
+    font-size:14px;
+    font-weight:100;
+    width:65px;
+    }
+
+#navegador input:focus, #navegador input:focus{
+    outline:none;
+    }
+
+#navegador button {
+    position:relative;
+    float:left;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    margin-top:-5px;
+    }
+
+#navegador button:hover{
+    cursor:pointer;
+    }
+
+#navegador button .lupa{
+    color:#333;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    display:left;
+    transition:1s;
+    }
+
+#navegador button:hover .lupa{
+    color:#d2625a;
+    }
+
+#navegador input::-webkit-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador input:-moz-placeholder{
+    color:#333;
+    opacity:0.5;
+    font-weight:100;
+    }
+
+#navegador input::-moz-placeholder{
+    color:#333;
+    opacity:0.5;
+    font-weight:100;
+    }
+
+#navegador input:-ms-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador input::-ms-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador .lupa{
+    -webkit-transition: all 1s ease;/* Safari and Chrome */
+    -moz-transition: all 1s ease;/* Firefox */
+    -ms-transition: all 1s ease;/* IE 9 */
+    -o-transition: all 1s ease;/* Opera */
+    transition: all 1s ease;
+    }
+
+.lupa:hover {
+    -webkit-transform:scale(1.25);/* Safari and Chrome */
+    -moz-transform:scale(1.25);/* Firefox */
+    -ms-transform:scale(1.25);/* IE 9 */
+    -o-transform:scale(1.25);/* Opera */
+    transform:scale(1.25);
+    }
+
+#segunda{
+    display:none;
+    position:absolute;
+    top:69.5%;
+    left:254px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:-12px;
+    padding-left:0;
+    }
+
+#segunda-ul{
+    background-color:#fff;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    list-style:none;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    padding:0;
+    }
+
+#segunda-ul .sub-list{
+    padding:5pt 12pt;
+    text-align:left;
+    transition:0.1s;
+    color:#676A6D;
+    text-transform:none;
+    letter-spacing:0px;
+}
+
+#segunda-ul .sub-list:hover{
+    background-color:#c73c32;
+    transition:0.1s;
+    color:#fff;
+    cursor:pointer;
+    }
+
+#list-ingresar{
+    display:block;
+    position:relative;
+    float:right;
+    list-style:none;
+    margin-left:9px;
+    margin-top:14px;
+    margin-right:15px;
+    font-family: 'Raleway', sans-serif;
+    font-size:13px;
+    padding:3px 10px 3px 10px;
+    color:#e5e5e5;
+    border-left:2px solid #fff;
+    letter-spacing:0.7px;
+    transition:.2s;
+    }
+
+#list-ingresar:hover{
+    color:#fff;
+    }
+
+/* NAV SMARTPHONE */
+#nav-smartphone-display{display:none;}
+#nav-smartphone{position:relative;float:left;width:100%;height:auto;background-color:#fff;color:#c73c32;padding:2px 0 0px;border-bottom:1px solid #ddd;}
+.oscuro{content:"";width:calc(100% - 300px);height:100%;float:left;top:0;left:0;position:fixed;background:rgba(0,0,0,0.5);
+    opacity: 1;}
+#nav-smartphone .logo{width:45%;height:auto;position:relative;float:left;text-align:left;padding-left:5%;padding-top:5px;cursor:pointer;}
+#nav-smartphone .icono{width:42%;height:auto;position:relative;float:left;text-align:right;padding-right:8%;padding-top:3px;cursor:pointer;}
+/* menu-smartphone */
+#menu-smartphone .fa-angle-right{color:#d2625a;}#menu-smartphone .fa-angle-up, .fa-angle-down{color:#918787;}
+#menu-smartphone{display:none;position:fixed;float:right;right:0;top:0;width:300px;height:calc(100% - 75px);z-index:1001;background-color:#f7f5f5;overflow:scroll;padding-bottom:75px;}
+#menu-smartphone .prepost{position:relative;float:left;width:calc(100% - 10px);font-family:'Montserrat', sans-serif;font-weight:200;font-size:13px;text-transform:uppercase;color:#d2625a;padding-left:10px;padding-top:20px;margin-bottom:-6px;background-color:#fff;z-index:1;}
+#menu-smartphone > h3{position:relative;float:left;width:290px;font-family: 'Open Sans', sans-serif;font-weight:700;font-size:26px;margin:0;color:#555;padding-left:10px;padding-bottom:5px;background-color:#fff;}
+#menu-smartphone > h3:after{content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;}
+#menu-smartphone .menu{position:relative;float:left;width:calc(100% - 12.5px - 12.5px);height:auto;padding:0 12.5px;background-color:#f7f5f5;border-top:5px solid #d2625a;}
+#menu-smartphone .menu-padre{position:relative;float:left;list-style:none!important;width:275px;height:auto;display:block;list-style-type:disc;-webkit-margin-before:15px;-webkit-margin-after:15px;-webkit-margin-start:0px;-webkit-margin-end:0px;-webkit-padding-start:40px;padding:0;cursor:pointer;color:#555;}#menu-smartphone .menu-padre a{color:#555;}
+#menu-smartphone .menu-padre-titulo{position:relative;float:left;width:calc(250px - 20px - 10px);padding-left:20px;font-size:18px;font-family: 'Open Sans', sans-serif;font-weight:600;}
+#menu-smartphone .fa-angle-down, #menu-smartphone .fa-angle-up{position:relative;float:right;font-weight:bold;margin-top:3px;padding-right:20px;}
+#menu-smartphone .menu-hijo{font-family: 'Open Sans', sans-serif;font-weight:500;font-size:18px;position:relative;float:left;width:calc(100% - 12px - 12px);height:auto;display:block;padding:15px 12px 15px 12px;margin:0;cursor:pointer;color:#8f8585!important;border-bottom:1px solid rgba(219,219,219,0.5);}
+#menu-smartphone .menu-hijo:hover a{color:#555!important;}#menu-smartphone .menu-hijo > a:link{color:#555;}#menu-smartphone .menu-hijo > a:visited{color:#555;}
+#menu-smartphone .separacion{margin-top:5px;}#menu-smartphone .noseparacion{border-bottom:none;}
+#menu-smartphone .menu-otros{position:relative;float:left;list-style:none!important;width:275px;height:auto;display:block;padding:15px 0 0;cursor:default;}
+#menu-smartphone .menu-otros-titulo{position:relative;float:left;width:250px;font-size:12px;font-family: 'Open Sans', sans-serif;font-weight:500;color:#d2625a;text-transform:uppercase;}
+/* busqueda-smartphone */
+#busqueda-smartphone {border:none;padding: 9px 15px 8px 15px;display:left;background-color:transparent;width:calc(100% - 62px);}
+#menu-smartphone input{color:#d2625a;font-size:18px;}#menu-smartphone input:focus, #menu-smartphone input:focus{outline:none;}
+#menu-smartphone button {background-color:transparent;border:none;outline:none;}#menu-smartphone button:hover{cursor:pointer;}#menu-smartphone button .lupa{color:#d2625a;width:20px;height:20px;font-size:20px;display:left;}
+#menu-smartphone .lupa{-webkit-transition: all 1s ease;/* Safari and Chrome */-moz-transition: all 1s ease;/* Firefox */-ms-transition: all 1s ease;/* IE 9 */-o-transition: all 1s ease;/* Opera */transition: all 1s ease;}.lupa:hover {-webkit-transform:scale(1.25);/* Safari and Chrome */-moz-transform:scale(1.25);/* Firefox */-ms-transform:scale(1.25);/* IE 9 */-o-transform:scale(1.25);/* Opera */transform:scale(1.25);}
+#menu-smartphone input::placeholder{color:#888;}
+
+/* NAV FIJA */
+.nav-fija{
+    position:fixed;
+    top:0;
+    width:calc(100% - 5%);
+    padding-left:5%;
+    left:0;
+    z-index:999;
+    background-color:rgba(255,255,255,0.9);
+    border-bottom:none!important;
+    box-shadow:0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    }
+
+@media only screen and (min-width: 864px){
+/* IMAGEN PORTADA */
+#portada-imagen{
+    width:100%;
+    height:auto;
+    float:left;
+    position:relative;
+    }
+
+#portada-imagen img{
+    width:100%;
+    }
+
+#portada-imagen .texto{
+    cursor:default;
+    position:absolute;
+    text-align:center;
+    bottom:50px;
+    width:100%;
+    }
+
+#portada-imagen .titulo{
+    font-family:'Railway',
+    sans-serif;
+    font-size:3em;
+    color:#fff;
+    margin:0;
+    }
+
+#portada-imagen .subtitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size:1.5em;
+    color:#fff;
+    }
+
+/* INDEX */
+#body-index{
+    width:auto;
+    height:auto;
+    margin:0 auto;
+    background-color:#fff;
+    max-width:1220px;
+    }
+    a{
+        text-decoration:none;
+        }
+
+/* articulo principal */
+#articulo-principal-envoltorio{
+    display:inline-flex;
+    display:-webkit-inline-flex;
+    width:calc(60% - 10px - 10px);
+    height:auto;
+    font-size:0;
+    float:left;
+    border:10px solid rgba(255,255,255, 0);
+    padding:4.5px 0 0;
+    }
+
+#articulo-principal{
+    border-radius:10px;
+    position:relative;
+    width:100%;
+    height:556px;
+    margin:0;
+    display:inline-flex;
+    display:-webkit-inline-flex;
+    overflow:hidden;
+    transition:.5s;
+    }
+
+#articulo-principal:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#articulo-principal .imagen{width:712px;height:556px;}
+#articulo-principal .articulo-texto{display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:calc(100% - 25px - 25px);height:auto;position:absolute;bottom:0;padding:20px 25px;background:rgba(0,0,0, 0.82);}
+#articulo-principal .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:17px;text-transform:uppercase;border-bottom:2px solid transparent;color:#fab23a;}#articulo-principal .etiqueta a:hover{color:#fab23a;border-bottom:2px solid #fab23a;}#articulo-principal .etiqueta a:link{color:#fab23a;}#articulo-principal .etiqueta a:visited{color:#fab23a;}
+#articulo-principal .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#fff;font-size:34px;padding:3px 0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;text-shadow:0 0 6px rgba(0,0,0,0.6);letter-spacing:-0.2px;}
+#articulo-principal .titulo a{color:#fff;}#articulo-principal .titulo a:visited{color:#fff;}#articulo-principal .titulo a:link{color:#fff;}
+#articulo-principal .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:16px;width:100%;height:auto;color:#ddd;float:left;padding:0;margin:0;cursor:default;}#articulo-principal .informacion .fa-calendar{color:#fab23a;}#articulo-principal .informacion .fa-angle-right{color:#fab23a;}#articulo-principal .informacion strong{color:#fab23a;}
+/* articulo secundario */
+#articulo-secundario-envoltorio{display:inline-flex;display:-webkit-inline-flex;width:calc(40% - 10px - 10px);height:auto;font-size:0;float:left;border:10px solid rgba(255,255,255, 0);padding:0;align-self:flex-start;}
+.separacion{padding-top:5px!important;}
+#articulo-secundario{border-radius:10px;position:relative;width:100%;height:268px;margin:0;display:inline-flex;display:-webkit-inline-flex;overflow:hidden;transition:.5s;}
+#articulo-secundario:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#articulo-secundario .imagen{width:100%;height:auto;}
+#articulo-secundario .articulo-texto{display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:calc(100% - 25px - 25px);height:auto;position:absolute;bottom:0;padding:15px 25px;background: rgba(0,0,0, 0.82);}
+#articulo-secundario .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:13px;text-transform:uppercase;border-bottom:2px solid transparent;color:#fab23a;}#articulo-secundario .etiqueta a:hover{color:#fab23a;border-bottom:2px solid #fab23a;}#articulo-secundario .etiqueta a:link{color:#fab23a;}#articulo-secundario .etiqueta a:visited{color:#fab23a;}
+#articulo-secundario .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#fff;font-size:24px;padding:0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;text-shadow:0 0 6px rgba(0,0,0,0.6);letter-spacing:-0.2px;}
+#articulo-secundario .titulo a{color:#fff;}#articulo-secundario .titulo a:visited{color:#fff;}#articulo-secundario .titulo a:link{color:#fff;}
+#articulo-secundario .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:13px;width:100%;height:auto;color:#ddd;float:left;padding:0;margin:0;cursor:default;}#articulo-secundario .informacion .fa-calendar{color:#fab23a;}#articulo-secundario .informacion .fa-angle-right{color:#fab23a;}#articulo-secundario .informacion strong{color:#fab23a;}
+/* articulo triple */
+#articulo-triple-envoltorio-principal{width:100%;height:auto;float:left;display:inline-flex;display:-webkit-inline-flex;}
+#articulo-triple-envoltorio{display:inline-flex;display:-webkit-inline-flex;width:calc(33.3333% - 10px - 10px);height:auto;font-size:0;float:left;border:10px solid rgba(255,255,255, 0);padding:0;align-self:flex-start;}
+#articulo-triple{border-radius:10px;position:relative;width:100%;height:auto;margin:0;display:inline-flex;display:-webkit-inline-flex;overflow:hidden;transition:.5s;}
+#articulo-triple:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#articulo-triple .imagen{width:100%;height:auto;}
+#articulo-triple .articulo-texto{display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:calc(100% - 25px - 25px);height:auto;position:absolute;bottom:0;padding:15px 25px;background: rgba(0,0,0, 0.82);}
+#articulo-triple .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:13px;text-transform:uppercase;border-bottom:2px solid transparent;color:#fab23a;}#articulo-triple .etiqueta a:hover{color:#fab23a;border-bottom:2px solid #fab23a;}#articulo-triple .etiqueta a:link{color:#fab23a;}#articulo-triple .etiqueta a:visited{color:#fab23a;}
+#articulo-triple .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#fff;font-size:24px;padding:0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;text-shadow:0 0 6px rgba(0,0,0,0.6);letter-spacing:-0.2px;}
+#articulo-triple .titulo a{color:#fff;}#articulo-triple .titulo a:visited{color:#fff;}#articulo-triple .titulo a:link{color:#fff;}
+#articulo-triple .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:13px;width:100%;height:auto;color:#ddd;float:left;padding:0;margin:0;cursor:default;}#articulo-triple .informacion .fa-calendar{color:#fab23a;}#articulo-triple .informacion .fa-angle-right{color:#fab23a;}#articulo-triple .informacion .fa-line-chart{color:#fab23a;}#articulo-triple .informacion strong{color:#fab23a;}
+/* articulo blog */
+#articulo-blog-envoltorio{width:calc(100% - 330px - 10px);height:auto;float:left;display:inline-flex;display:-webkit-inline-flex;border-left:10px solid rgba(255,255,255, 0);}
+#articulo-blog{width:100%;height:auto;display:inline-flex;display:-webkit-inline-flex;padding:20px 0;margin-bottom:10px;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#articulo-blog:hover{cursor:pointer;-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#articulo-blog .imagen{width:290px;height:auto;padding:0;margin:0;}
+#articulo-blog img{display:inline-flex;display:-webkit-inline-flex;width:100%;height:auto;}
+#articulo-blog .texto{width:calc(100% - 20px - 20px);height:auto;float:left;display:flex;display:-webkit-flex;-webkit-flex-direction:column;margin:0 20px 10px;}
+#articulo-blog .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;color:#fab23a;}#articulo-blog .etiqueta a:hover{text-decoration:underline;}#articulo-blog .etiqueta a:link{color:#fab23a;}#articulo-blog .etiqueta a:visited{color:#fab23a;}
+#articulo-blog .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#000;font-size:36px;padding:0 0 5px;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;line-height:35px}#articulo-blog a:hover .titulo {text-decoration:underline;}
+#articulo-blog .titulo:first-letter{text-transform:uppercase;}#articulo-blog .titulo a{color:#fff;}#articulo-blog .titulo a:visited{color:#fff;}#articulo-blog .titulo a:link{color:#fff;}
+#articulo-blog .texto-articulo{font-family: 'Raleway', sans-serif;font-weight:300;font-size:16px;width:100%;height:auto;color:#555;float:left;padding:15px 0 5px;margin:0;line-height:22px;}
+#articulo-blog .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:13px;width:100%;height:auto;color:#555;float:left;padding:0;margin:0;}#articulo-blog .informacion .fa-calendar{color:#fab23a;}#articulo-blog .informacion .fa-angle-right{color:#fab23a;}#articulo-blog .informacion strong{color:#fab23a;}
+@media only screen and (min-width: 864px){#index-titulo-blog{width:calc(100% - 10px - 330px);height:auto;float:left;position:relative;font-size:18px;border-top:1px solid #fab23a;border-bottom:1px solid #fab23a;font-style:bold;margin:10px 0 5px 10px;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}}
+/* lateral */
+#index-lateral{float:right;position:relative;width:300px;height:auto;border-right:10px solid rgba(255,255,255, 0);margin-top:10px;}
+#index-lateral .titulo-seccion{text-transform:uppercase;position:relative;float:left;font-family:'Raleway',sans-serif;font-weight:600;color:#fab23a;font-size:20px;padding:15px 0;margin-top:15px;}
+#index-lateral .titulo-seccion:after{padding:5px 0;border-top:5px solid #fab23a;content:"";width:20%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#index-lateral .titulo-seccion:hover::after{width:100%;transition:.4s;}
+#blog-populares{float:left;position:relative;width:300px;height:auto;margin-bottom:10px}
+#blog-populares img{width:300px;height:145px;float:left;position:relative;}
+#blog-populares .texto{background:rgba(0,0,0, 0.82);position:absolute;float:left;width:230px;height:auto;bottom:36px;left:0;padding:10px 5px 15px 15px;}
+#blog-populares .texto:after{padding:5px 0;border-bottom:5px solid #fab23a;content:"";width:0%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#blog-populares .texto:before{padding:5px 0;border-bottom:5px solid #0c7fd7;content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#blog-populares:hover .texto:after{width:100%;transition:.4s;}
+#blog-populares:hover .texto:before{width:-100%;transition:.4s;}
+#blog-populares .titulo{position:relative;float:left;font-family:'Raleway',sans-serif;font-weight:600;color:#fff;font-size:17px;letter-spacing:1.2px;letter-spacing:-0.1px;margin:0 0 0 20px;}
+#blog-populares .numero{position:absolute;left:0;background-color:#fab23a;padding:5px 8px;font-family:'PT Sans Narrow',sans-serif;font-weight:600;margin:4.5px 0;color:#000;}
+/* publicidad */
+#index-publicidad-lateral-rectangulo{height:auto;float:right;position:relative;display:block;width:300px;margin:20px auto 20px;}
+#index-publicidad-lateral-rectangulo img{position:-webkit-sticky;position:sticky;width:300px;float:left;top:15px;overflow:hidden;}
+/* boton */
+#mas-entradas{width:calc(100% - 330px - 20px);height:auto;position:relative;float:left;border:10px solid rgba(255,255,255, 0);padding:25px 0;right:0;}
+#mas-entradas .boton{color:#fab23a;background:rgba(0,0,0, 0.82);padding:8px 13px 11px;font-family: 'Raleway', sans-serif;font-weight:500;font-size:18px;text-align:right;right:0;text-transform:uppercase;position:relative;float:right;}
+#mas-entradas .boton:after{padding:5px 0;border-bottom:5px solid #fab23a;content:"";width:0%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#mas-entradas .boton:before{padding:5px 0;border-bottom:5px solid #0c7fd7;content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#mas-entradas .boton:hover:after{width:100%;transition:.4s;}
+#mas-entradas .boton:hover:before{width:-100%;transition:.4s;}
+}
+@media only screen and (max-width:863px){
+/* INDEX */
+#body-index{width:auto;height:auto;margin:0 auto;background-color:#fff;max-width:100%;}a{text-decoration:none;}
+/* articulo principal */
+#articulo-principal-envoltorio{position:relative;float:left;;width:calc(100% - 10px - 10px);height:auto;font-size:0;float:left;border:10px solid rgba(255,255,255, 0);border-bottom:none;padding:0;}
+#articulo-principal{position:relative;width:100%;height:auto;margin:0;position:relative;float:left;border-bottom:1px solid #ddd;padding-bottom:15px;}
+#articulo-principal .imagen{width:100%;height:auto;position:relative;float:left;}
+#articulo-principal .articulo-texto{position:relative;float:left;width:100%;height:auto;margin-top:10px;padding:0;background:#fff}
+#articulo-principal .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:14px;text-transform:uppercase;margin-bottom:-5px;}#articulo-principal .etiqueta a:link{color:#fab23a;}#articulo-principal .etiqueta a:visited{color:#fab23a;}
+#articulo-principal .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#222;font-size:28px;padding:3px 0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;}
+#articulo-principal .titulo a{color:#222;}#articulo-principal .titulo a:visited{color:#222;}#articulo-principal .titulo a:link{color:#222;}
+#articulo-principal .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:15px;width:100%;height:auto;color:#555;float:left;padding:0;margin:0;cursor:default;}#articulo-principal .informacion .fa-calendar{color:#fab23a;}#articulo-principal .informacion .fa-angle-right{color:#fab23a;}#articulo-principal .informacion strong{color:#fab23a;}
+/* articulo secundario */
+#articulo-secundario-envoltorio{position:relative;float:left;width:calc(50% - 10px - 10px);height:auto;font-size:0;float:left;border:10px solid rgba(255,255,255, 0);padding:0;}
+#articulo-secundario{position:relative;width:100%;height:auto;margin:0;position:relative;float:left;}
+#articulo-secundario .imagen{width:100%;height:125px;position:relative;float:left;}
+#articulo-secundario .articulo-texto{position:relative;float:left;width:100%;height:auto;padding:15px 0;background:#fff;}
+#articulo-secundario .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:13px;text-transform:uppercase;}#articulo-secundario .etiqueta a:link{color:#fab23a;}#articulo-secundario .etiqueta a:visited{color:#fab23a;}
+#articulo-secundario .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#222;font-size:20px;padding:0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;}
+#articulo-secundario .titulo a{color:#222;}#articulo-secundario .titulo a:visited{color:#222;}#articulo-secundario .titulo a:link{color:#222;}
+#articulo-secundario .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:13px;width:100%;height:auto;color:#555;float:left;padding:0;margin:0;cursor:default;}#articulo-secundario .informacion .fa-calendar{color:#fab23a;}#articulo-secundario .informacion .fa-angle-right{color:#fab23a;}#articulo-secundario .informacion strong{color:#fab23a;}
+/* articulo triple */
+#articulo-triple-envoltorio-principal{width:100%;height:auto;position:relative;float:left;}
+#articulo-triple-envoltorio{position:relative;float:left;width:calc(100% - 10px - 10px);height:auto;font-size:0;border:10px solid rgba(255,255,255, 0);padding:0;border-bottom:1px solid #ddd;}
+#articulo-triple{position:relative;width:100%;height:auto;margin:0;float:left;}
+#articulo-triple .imagen{width:100%;height:auto;position:relative;float:left;}
+#articulo-triple .articulo-texto{position:relative;float:left;width:100%;height:auto;position:relative;padding:15px 0;background:#fff}
+#articulo-triple .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:500;font-size:13px;text-transform:uppercase;margin-bottom:-3px;color:#fab23a;}#articulo-triple .etiqueta a:link{color:#fab23a;}#articulo-triple .etiqueta a:visited{color:#fab23a;}
+#articulo-triple .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#222;font-size:24px;padding:0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;}
+#articulo-triple .titulo a{color:#222;}#articulo-triple .titulo a:visited{color:#222;}#articulo-triple .titulo a:link{color:#222;}
+#articulo-triple .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:13px;width:100%;height:auto;color:#555;float:left;padding:0;margin:0;cursor:default;}#articulo-triple .informacion .fa-calendar{color:#fab23a;}#articulo-triple .informacion .fa-angle-right{color:#fab23a;}#articulo-triple .informacion strong{color:#fab23a;}
+/* articulo blog */
+#articulo-blog-envoltorio{width:calc(50% - 10px - 10px);height:358px;position:relative;float:left;border:10px solid rgba(255,255,255, 0);}
+#articulo-blog{position:relative;float:left;width:100%;height:auto;padding:0 0 20px;border-bottom:1px solid #e9edef;}
+#articulo-blog .imagen{position:relative;float:left;width:100%;height:auto;padding:0;margin:0;}
+#articulo-blog img{width:180px;height:135px;}#articulo-blog svg{width:180px;height:135px;}
+#articulo-blog .texto{width:100%;height:auto;float:left;display:flex;display:-webkit-flex;-webkit-flex-direction:column;margin:0}
+#articulo-blog .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;color:#fab23a;}#articulo-blog .etiqueta a:link{color:#fab23a;}#articulo-blog .etiqueta a:visited{color:#fab23a;}
+#articulo-blog .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#000;font-size:26px;padding:0;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;line-height:35px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-height:1;}#articulo-blog a:hover .titulo {text-decoration:underline;}
+#articulo-blog .titulo:first-letter{text-transform:uppercase;}#articulo-blog .titulo a{color:#fff;}#articulo-blog .titulo a:visited{color:#fff;}#articulo-blog .titulo a:link{color:#fff;}
+#articulo-blog .texto-articulo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-height:1;font-family: 'Raleway', sans-serif;font-weight:300;font-size:14px;width:100%;height:auto;color:#555;float:left;padding:10px 0;margin:0;cursor:default;line-height:22px;}
+#articulo-blog .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:12px;width:100%;height:auto;color:#555;float:left;padding:5px 0 0;margin:-5px 0 0;cursor:default;background-color:#fff;}#articulo-blog .informacion .fa-calendar{color:#fab23a;}#articulo-blog .informacion .fa-angle-right{color:#fab23a;}#articulo-blog .informacion strong{color:#fab23a;}
+/* lateral */
+#index-lateral{display:none;}
+/* boton */
+#mas-entradas{width:calc(100% - 20px);height:auto;position:relative;float:left;border:10px solid rgba(255,255,255, 0);padding:25px 0;right:0;}
+#mas-entradas .boton{color:#fab23a;background:rgba(0,0,0, 0.82);padding:8px 13px 11px;font-family:'Raleway', sans-serif;font-weight:500;font-size:18px;text-align:right;right:0;text-transform:uppercase;position:relative;float:right;}
+}
+#titulo-triple{width:calc(100% - 20px);height:auto;float:left;position:relative;font-size:18px;border-top:1px solid #fab23a;border-bottom:1px solid #fab23a;font-style:bold;margin:10px 10px 0;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}
+/* quienes somos */
+@media only screen and (min-width: 864px){
+#quienessomos{width:calc(100% - 330px - 20px);float:left;height:auto;position:relative;margin-bottom:25px;cursor:default;box-shadow:0 1px 1px rgba(45,43,43,0.26);}
+}
+@media only screen and (max-width:863px){
+#quienessomos{width:100%;float:left;height:auto;position:relative;margin-bottom:25px;cursor:default;}
+}
+#quienessomos .titulo{margin:0;color:#fab23a;background:rgba(0,0,0, 0.82);padding:8px 13px;font-family:'Raleway', sans-serif;font-weight:500;font-size:18px;text-align:center;}
+#quienessomos .texto{width:calc(100% - 5%);height:300px;margin:15px 2.5%;font-family: 'Open Sans', sans-serif;font-size:15px;font-weight:200;overflow-y:scroll;}#quienessomos .texto a{color:#d2625a;}#quienessomos .texto a:hover{text-decoration:underline;}
+/* ATRACCION BLOQUE TOP */
+#atraccion-bloque-top{float:left;width:100%;height:auto;margin:0 auto;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-titulo{flex:1;-webkit-flex:1;}
+#atraccion-links{flex:1;-webkit-flex:1;}
+/* ATRACCION PUBLICIDAD */
+#atraccion-publicidad-top{width:970px;height:auto;margin:10px auto;}
+#atraccion-publicidad-lateral-cuadrado{position:relative;float:left;width:300px;height:250px;margin-bottom:35px;}
+#atraccion-publicidad-lateral-rectangulo{float:right;position:relative;display:block;width:300px;height:auto;margin:0 auto;}
+#atraccion-publicidad-lateral-rectangulo img{position:-webkit-sticky;position:sticky;width:300px;float:left;top:15px;overflow:hidden;}
+.sticky{padding-bottom:25px;}
+/* ATRACCION PUBLICIDAD TOP SMARTPHONE */
+#atraccion-publicidad-top-smartphone{display:none;}
+@media only screen and (max-width: 970px) and (min-width: 864px){
+#atraccion-publicidad-top{display:none;}
+#atraccion-publicidad-top-smartphone{display:block;width:320px;height:auto;margin:10px auto;}
+#index-publicidad-media{width:100%;height:auto;position:relative;float:left;padding:25px 0;margin:25px 0;border-top:1px dashed #e9edef;border-bottom:1px dashed #e9edef;}
+}
+/* ATRACCION BARRA */
+#barra-atraccion-envoltorio{width:100%;height:35px;margin-top:15px;}
+#barra-atraccion{position:relative;float:left;width:100%;height:auto;}
+#barra-atraccion .ciudad{position:relative;float:left;width:calc(100% - 3px);height:auto;list-style:none;padding:0;margin:0;font-family: 'Open Sans', sans-serif;font-size:15px;border-left:3px solid #d2625a;}
+#barra-atraccion .ciudad a{height:auto;color:#888;padding:0 4pt;}#barra-atraccion .ciudad a:hover{color:#d2625a;}
+#barra-atraccion .separador{color:#888;}
+/* ATRACCION TITULO */
+#atraccion-titulo{display:inline-flex;display:-webkit-inline-flex;width:100%;height:auto;border-bottom:1px solid #ddd;padding-bottom:10px;}
+#atraccion-titulo .titulo-principal{margin:0;width:auto;float:left;position:relative;font-family:'PT Sans Narrow',sans-serif;font-size:45px;color:#303030;cursor:default;}
+#atraccion-titulo .titulo-principal:first-letter{text-transform:capitalize;}
+#atraccion-titulo .icono-texto{display:none;}
+#atraccion-titulo .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-25px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1.5px;position:absolute;padding:5px 12.5px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;}
+#atraccion-titulo .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+#atraccion-titulo .icono-atraccion{fill:#bbb;margin-top:5px;margin-right:7px;float:left;position:relative;width:40px;height:40px;cursor:pointer;transition:.2s;}
+#atraccion-titulo .icono-atraccion:hover{fill:#d2625a;}
+/* ATRACCION NAV */
+#envoltorio-nav-atraccion{width:100%;height:auto;padding:0;background-color:#fff;flex:1;-webkit-flex:1;}
+#ul-atraccion{list-style:none;padding:0;margin:0;width:100%;height:auto;}
+#ul-atraccion a{float:left;position:relative;padding:20px 16px 20px 0;background-color:transparent;color:#777;font-family: 'Open Sans', sans-serif;font-size:0.9em;text-align:left;font-weight:bold;}#ul-atraccion a:hover{color:#d2625a;}
+#ul-atraccion .titulo-nav{display:block;float:left;position:relative;padding:20px 16px 20px 0;background-color:transparent;color:#d2625a;font-family: 'Open Sans', sans-serif;font-size:1.2em;text-align:left;font-weight:bold;line-height:15px;cursor:default;}
+#ul-atraccion .derecha{text-align:right;float:right;right:0;padding-right:0;}
+/* ATRACCION BLOQUE PRINCIPAL */
+#atraccion-bloque-principal{float:left;width:calc(100% - 300px - 40px);height:auto;margin:0 auto 50px;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-bloque-principal .full{width:100%!important;}
+/* imagen */
+#atraccion-imagen{-webkit-order:0;width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#atraccion-imagen > img{align-self:center;-webkit-align-self:center;width:650px;height:auto;}
+#atraccion-imagen .mapa{align-self:center;-webkit-align-self:center;width:575px;height:500px;}
+#atraccion-imagen .mapa2{display:none;}
+#atraccion-imagen-adicional{width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;margin-top:10px;margin-bottom:-16px;}
+#atraccion-imagen-adicional > img{align-self:center;-webkit-align-self:center;width:575px;height:auto;}
+#atraccion-imagen-adicional .espacio{margin-top:20px;}
+#atraccion-imagen-adicional-vertical{width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#atraccion-imagen-adicional-vertical > img{align-self:center;-webkit-align-self:center;width:380px;height:auto;}
+#atraccion-imagen-adicional-vertical .espacio{margin-top:20px;}
+/* autor */
+#atraccion-imagen .autor{width:100%;height:auto;text-align:center;font-family: 'Didact Gothic', sans-serif;font-weight:100;font-size:10px;color:#888;}
+#atraccion-imagen a:hover{color:#d2625a!important;}#atraccion-imagen a:visited{color:#888;}#atraccion-imagen a:link{color:#888;}
+#atraccion-imagen-adicional .autor, #atraccion-imagen-adicional-vertical .autor{width:100%;height:auto;text-align:center;font-family: 'Didact Gothic', sans-serif;font-weight:100;font-size:12px;color:#555;}
+#atraccion-imagen-adicional .autor a, #atraccion-imagen-adicional-vertical .autor a{color:#555!important;}
+#atraccion-imagen-adicional a:hover, #atraccion-imagen-adicional-vertical a:hover{color:#d2625a!important;}#atraccion-imagen-adicional a:visited, #atraccion-imagen-adicional-vertical a:visited{color:#555;}#atraccion-imagen-adicional a:link, #atraccion-imagen-adicional-vertical a:link{color:#555;}
+#blog-imagen .autor{width:100%;height:auto;text-align:center;font-family: 'Didact Gothic', sans-serif;font-weight:100;font-size:12px;color:#555;}
+#blog-imagen a:hover{color:#d2625a!important;}#blog-imagen a:visited{color:#555;}#blog-imagen a:link{color:#555;}
+#autor-portada{width:100%;height:auto;text-align:right;font-family: 'Didact Gothic', sans-serif;font-weight:100;font-size:9px;color:#aaa;margin-top:-5px;margin-bottom:5px;}
+#autor-portada a:hover{color:#888!important;text-decoration:underline;}#autor-portada a:visited{color:#aaa;}#autor-portada a:link{color:#aaa;}
+/* atraccion-imagen-post */
+#atraccion-imagen-post{align-self:center;-webkit-align-self:center;width:650px;height:auto;margin-top:5px;}
+#atraccion-imagen-post .arriba{width:calc(100% - 20px);height:auto;position:relative;float:left;padding:5px 10px;font-family:'Oswald',sans-serif;font-weight:100;font-size:15px;border-bottom:1px solid #ddd;}
+#atraccion-imagen-post .arriba .puntuacion{position:relative;float:left;margin-right:10px;color:#e26f6f;font-size:17px;font-weight:300;}
+#atraccion-imagen-post .arriba .estrellas{position:relative;float:left;font-size:17px;}#atraccion-imagen-post .no-estrella{color:rgba(170,159,159,0.5);}#atraccion-imagen-post .estrella{color:#e26f6f;}
+#atraccion-imagen-post .arriba .votos{position:relative;float:right;color:#856363;font-size:17px;font-weight:300;}
+#atraccion-imagen-post .abajo{width:calc(100% - 20px);height:auto;position:relative;float:left;padding:5px 10px;font-family:'Oswald',sans-serif;font-weight:100;font-size:16px;color:#555;}#atraccion-imagen-post .abajo:link{color:#555;}#atraccion-imagen-post .abajo:visited{color:#555;}
+#atraccion-imagen-post .abajo .opcion{position:relative;float:left;margin-right:25px;color:#555;}#atraccion-imagen-post .abajo .opcion:hover{color:#d2625a;cursor:pointer;text-decoration:underline;}#atraccion-imagen-post .abajo .opcion:link{color:#555;}#atraccion-imagen-post .abajo .opcion:visited{color:#555;}
+#atraccion-imagen-post .abajo .sinespacio{margin:0!important;}
+#atraccion-imagen-post .abajo i{margin-right:5px;}
+#atraccion-imagen-post .opcion .votos{position:absolute;float:right;background-color:#fab23a;color:#fff;border-radius:5px;padding:2px 3px;font-size:8px;font-family:'Open Sans', sans-serif;margin-left:-4px;margin-top:-3px;text-align:right;box-shadow:0 1px 1px rgba(45,43,43,0.26);}
+/* informacion */
+#atraccion-informacion{-webkit-order:1;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-informacion .informacion{line-height:180%;font-family:'Roboto', sans-serif;font-weight:200;font-size:16px;letter-spacing:-0.1px;}#atraccion-informacion .informacion a{color:#d2625a;font-weight:500;}#atraccion-informacion .informacion a:hover{color:#c73c32;text-decoration:underline;}#atraccion-informacion .informacion strong{font-weight:500;color:#333;}
+#atraccion-informacion > img{align-self:center;-webkit-align-self:center;}.h3martop{padding-top:30px;}
+/*#atraccion-informacion .titulo-imagen{align-self:center;-webkit-align-self:center;width:100%;height:auto;font-family:"Verdana","Helvetica","sans-serif",sans-serif;text-align:center;font-size:13px;color:#666;}*/
+#atraccion-informacion .autoryfecha{line-height:180%;font-family:'Montserrat', sans-serif;font-weight:300;font-size:16px;letter-spacing:0px;margin:30px 0 20px;padding-top:30px;border-top:1px solid #ddd;}#atraccion-informacion .autoryfecha data{font-weight:500;color:#d2625a;}
+#atraccion-informacion .autoryfecha a{color:#d2625a;font-weight:400;}#atraccion-informacion .autoryfecha a:hover{color:#c73c32;text-decoration:underline;}
+/* comollegar */
+#atraccion-comollegar{-webkit-order:3;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-comollegar .texto{width:100%;padding-bottom:15px;margin:0;line-height:180%;font-family:'Open Sans', sans-serif;font-weight:300;font-size:16.5px;}#atraccion-comollegar .texto a{color:#d2625a;font-weight:600;}#atraccion-comollegar .texto a:hover{color:#c73c32;text-decoration:underline;}#atraccion-comollegar .texto strong{font-weight:500;color:#444;}
+#atraccion-comollegar .separador{border-bottom:1px dotted #ddd;}
+#atraccion-comollegar > h3{color:#333;margin:15px 0 5px;width:100%;line-height:180%;font-family:"Verdana","Helvetica","sans-serif",sans-serif;margin-bottom:5px;font-weight:300;font-size:16px;letter-spacing:-0.2px;}
+/* googlemaps */
+#atraccion-googlemaps{-webkit-order:4;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-googlemaps .mapa{width:90%;height:300px;margin:15px auto;}
+/* horarioyprecio */
+#atraccion-horarioyprecio{-webkit-order:5;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-horarioyprecio .texto{width:100%;padding-bottom:15px;margin:0;line-height:180%;font-family:'Open Sans', sans-serif;font-weight:300;font-size:17px;letter-spacing:0.1px;}#atraccion-horarioyprecio .texto a{color:#c73c32;font-weight:500;}#atraccion-horarioyprecio .texto strong{font-weight:500;color:#444;}
+#atraccion-horarioyprecio .separador{border-bottom:1px dotted #ddd;}
+#atraccion-horarioyprecio > h3{color:#333;margin:15px 0 5px;width:100%;line-height:180%;font-family:"Verdana","Helvetica","sans-serif",sans-serif;margin-bottom:5px;font-weight:300;font-size:16px;letter-spacing:-0.2px;}
+#atraccion-horarioyprecio .atraccion{color:#222;padding-bottom:3px;font-size:18px;width:100%;float:left;position:relative;}
+#atraccion-horarioyprecio .atraccion:after{content:"";width:10%;position:absolute;top:0;left:0;bottom:0;right:0;border-bottom:1px solid #d2625a;z-index:9;}
+#atraccion-horarioyprecio .atraccion:before{content:"";width:90%;position:absolute;top:0;left:10%;bottom:0;right:0;border-bottom:1px solid #ddd;z-index:9;}
+/* mymaps */
+#atraccion-mymaps{-webkit-order:6;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-mymaps .mapa{width:90%;height:300px;margin:15px auto;}
+/* hoteles */
+#atraccion-hoteles{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:7;}
+#atraccion-hoteles > h3{text-indent:15px;position:relative;float:left;margin:10px 0;letter-spacing:-0.5px;padding-top:10px;font-family:'Montserrat', sans-serif;font-weight:300;font-size:22px;text-align:left;width:100%;color:#303030;}
+#lista-hoteles{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:flex-start;height:auto;padding:5px;width:calc(33.3333% - 5px - 5px);}
+#hotel{cursor:default;box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;}
+#hotel .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#hotel .nombre{color:#303030;font-size:19px;letter-spacing:-0.2px;font-family:'PT Sans Narrow',sans-serif;font-weight:300;padding:0 12pt 8px;margin:10px 0;position:relative;}
+#hotel .nombre:after{padding:5px 0;border-bottom:3px solid #bf6666;content:"";width:15%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.6s;}
+#hotel .nombre:before{padding:5px 0;margin-top:-1px;border-bottom:1px solid #ddd;content:"";width:85%;position:absolute;top:0;left:15%;bottom:1px;right:0;z-index:9;transition:.6s;}
+#lista-hoteles:hover .nombre:after{width:100%;transition:.6s;}
+#lista-hoteles:hover .nombre:before{width:-100%;transition:.6s;}
+#hotel .puntuacion{font-size:16px;padding:0 12pt;margin:0;position:relative;text-align:center;}
+#hotel .texto{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;}
+#hotel .reservas-titulo{position:relative;float:left;width:100%;font-family:'PT Sans Narrow',sans-serif;font-weight:600;font-size:16px;margin:5px 12pt 0;color:#777;}
+#hotel .reservas{width:calc(100% - 20px - 20px);margin:5px 20px 5px;}
+#hotel .booking{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #003580;color:#003580;padding:6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;}#hotel .booking:hover{border-radius:0.25rem;border:1px solid #003580;background-color:#003580;color:#fff;}
+/* redes */
+#atraccion-redes-envoltorio{-webkit-order:8;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#atraccion-redes{width:100%;height:auto;position:relative;float:left;margin:25px 0 20px;}
+#atraccion-redes .facebook{width:50%;padding:15px 0 13px;float:left;background-color:#3B5998;color:#fff;text-align:center;font-family:'Open Sans', sans-serif;text-transform:uppercase;font-size:14px;}
+#atraccion-redes .twitter{width:50%;padding:15px 0 13px;float:right;background-color:#09c;color:#fff;text-align:center;font-family:'Open Sans', sans-serif;text-transform:uppercase;font-size:14px;}
+#atraccion-redes .facebook:after{padding:5px 0;border-bottom:5px solid #fab23a;content:"";width:0%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#atraccion-redes .facebook:before{padding:5px 0;border-bottom:5px solid #3B5998;content:"";width:50%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;transition:.4s;}
+#atraccion-redes .facebook:hover:after{width:50%;transition:.4s;}
+#atraccion-redes .facebook:hover:before{width:-50%;transition:.4s;}
+#atraccion-redes .twitter:after{padding:5px 0;border-bottom:5px solid #fab23a;content:"";width:0%;position:absolute;top:0;right:0;bottom:0;z-index:9;transition:.4s;}
+#atraccion-redes .twitter:before{padding:5px 0;border-bottom:5px solid #09c;content:"";width:50%;position:absolute;top:0;right:0;bottom:0;z-index:9;transition:.4s;}
+#atraccion-redes .twitter:hover:after{width:50%;transition:.4s;}
+#atraccion-redes .twitter:hover:before{width:-50%;transition:.4s;}
+/* ATRACCION BLOQUE PRINCIPAL H2 */
+#atraccion-informacion > h2, #atraccion-comollegar > h2, #atraccion-googlemaps > h2, #atraccion-horarioyprecio > h2, #atraccion-mymaps > h2, #atraccion-hoteles > h2, #atraccion-redes-envoltorio > h2, #buscador-cartas > h2, #comentarios > h2, #sitemap > h2, #ruta > h2{position:relative;float:left;margin:30px 0 10px;letter-spacing:-0.5px;padding-bottom:15px;font-family:'PT Sans Narrow',sans-serif;font-weight:300;font-size:30px;text-align:left;width:100%;}
+#atraccion-informacion > h2:after, #atraccion-comollegar > h2:after, #atraccion-googlemaps > h2:after, #atraccion-horarioyprecio > h2:after, #atraccion-mymaps > h2:after, #atraccion-hoteles > h2:after, #atraccion-redes-envoltorio > h2:after, #buscador-cartas > h2:after, #comentarios > h2:after, #sitemap > h2:after, #ruta > h2:after{content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;border-bottom:3px solid #d2625a;z-index:9;}
+#atraccion-informacion > h2:before, #atraccion-comollegar > h2:before, #atraccion-googlemaps > h2:before, #atraccion-horarioyprecio > h2:before, #atraccion-mymaps > h2:before, #atraccion-hoteles > h2:before, #atraccion-redes-envoltorio > h2:before, #buscador-cartas > h2:before, #comentarios > h2:before, #sitemap > h2:before, #ruta > h2:before{content:"";width:0%;position:absolute;top:0;left:5%;bottom:1px;right:0;border-bottom:1px solid #ddd;z-index:9;}
+/* ATRACCION BLOQUE LATERAL */
+#atraccion-bloque-lateral{float:right;position:relative;display:block;width:300px;height:auto;margin:0 auto;}
+/* nube */
+#atraccion-nube .fa-angle-right{color:#bf6666;}#atraccion-nube .fa-angle-up, .fa-angle-down{color:#918787;}
+#atraccion-nube{position:relative;float:left;width:300px;height:auto;margin:30px 0;}
+#atraccion-nube .prepost{position:relative;float:left;width:300px;font-family:'Montserrat', sans-serif;font-weight:200;font-size:11.5px;text-transform:uppercase;color:#d2625a;margin-bottom:-6px;}
+#atraccion-nube > h3{position:relative;float:left;width:300px;font-family: 'Open Sans', sans-serif;font-weight:700;font-size:21px;margin:0;color:#555;padding-bottom:5px;}
+#atraccion-nube > h3:after{content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;}
+#atraccion-nube .nube{position:relative;float:left;width:calc(100% - 12.5px - 12.5px);height:auto;padding:0 12.5px;background-color:#f7f5f5;border-top:5px solid #d2625a;}
+#atraccion-nube .nube-padre{position:relative;float:left;list-style:none!important;width:275px;height:auto;display:block;list-style-type:disc;padding:7px 0;margin:0;cursor:pointer;}
+#atraccion-nube .noespacio{margin-top:-3px;}#atraccion-nube .cincopx{padding-bottom:5px;}
+#atraccion-nube .nube-padre-titulo{position:relative;float:left;width:250px;font-size:14px;font-family: 'Open Sans', sans-serif;font-weight:600;}
+#atraccion-nube .fa-angle-down, #atraccion-nube .fa-angle-up{position:relative;float:right;font-weight:bold;margin-top:3px;padding-right:10px;}
+#atraccion-nube .nube-hijo{font-family: 'Open Sans', sans-serif;font-weight:300;font-size:14px;position:relative;float:left;width:calc(275px - 10px);height:auto;display:block;padding:8px 5px;margin:0;cursor:pointer;color:#8f8585!important;border-top:1px solid rgba(219,219,219,0.5);}
+#atraccion-nube .nube-hijo:hover{color:#bf6666!important;}#atraccion-nube .nube-hijo > a:link{color:#8f8585;}#atraccion-nube .nube-hijo > a:visited{color:#8f8585;}
+#atraccion-nube .nube-hijo li{list-style:none!important;}
+#atraccion-nube a{margin:0!important;}
+#atraccion-nube .separacion{margin-top:5px!important;}#atraccion-nube .noseparacion{border-top:none;}
+#atraccion-nube .nube-otros{position:relative;float:left;list-style:none!important;width:275px;height:auto;display:block;padding:5px 0 0;cursor:default;}
+#atraccion-nube .nube-otros-titulo{position:relative;float:left;width:250px;font-size:11px;font-family: 'Open Sans', sans-serif;font-weight:500;color:#bf6666;text-transform:uppercase;}
+/* nube iconos */
+#atraccion-nube .icono-atraccion{fill:#8f8585;position:relative;float:left;width:16px;height:16px;margin-right:7px;margin-top:1.3px;}
+#atraccion-nube .nube-hijo:hover .icono-atraccion{fill:#bf6666;}
+/* blog */
+#atraccion-blog-novedades .fa-angle-right{color:#d2625a;}
+#atraccion-blog-novedades{position:relative;float:left;width:300px;height:auto;margin:0 0 30px;}
+#atraccion-blog-novedades .prepost{position:relative;float:left;width:300px;font-family:'Montserrat', sans-serif;font-weight:200;font-size:11.5px;text-transform:uppercase;color:#d2625a;margin-bottom:-6px;}
+#atraccion-blog-novedades > h3{position:relative;float:left;width:300px;font-family: 'Open Sans', sans-serif;font-weight:700;font-size:21px;margin:0;color:#555;padding-bottom:5px;}
+#atraccion-blog-novedades > h3:after{content:"";width:100%;position:absolute;top:0;left:0;bottom:0;right:0;z-index:9;}
+#atraccion-blog-novedades .envoltorio{position:relative;float:left;width:300px;height:auto;background-color:transparent;border-top:5px solid #d2625a;}
+#atraccion-blog-novedades .entrada{position:relative;float:left;display:block;width:300px;height:auto;padding:7px 0;border-bottom:1px solid rgba(219,219,219,0.5);transition:.3s;}
+#atraccion-blog-novedades .imagen{position:relative;float:left;width:115px;height:80px;}
+#atraccion-blog-novedades img{width:115px;height:80px;}
+#atraccion-blog-novedades .texto{position:relative;float:left;width:153.5px;height:auto;margin-left:10px;}
+#atraccion-blog-novedades .etiqueta{position:relative;float:left;text-transform:uppercase;color:#fab23a;font-family:'Montserrat', sans-serif;font-weight:600;font-size:11px;}
+#atraccion-blog-novedades .titulo{position:relative;float:left;bottom:0;width:153.5px;height:auto;font-family: 'Open Sans', sans-serif;font-weight:600;font-size:14.5px;color:#555;}
+#atraccion-blog-novedades .entrada:hover .titulo{color:#c73c32;transition:.3s;}#atraccion-blog-novedades a:link{color:#555;}#atraccion-blog-novedades a:visited{color:#555;}
+#atraccion-blog-novedades .entrada:hover img{opacity:0.8;transition:.3s;}
+/* BLOG */
+#atraccion-nube .nube-años{position:relative;float:left;list-style:none!important;width:275px;height:auto;display:block;padding:5px 0 0;cursor:default;margin-bottom:-7px;}
+#atraccion-nube .nube-años-titulo{position:relative;float:left;width:250px;font-size:12px;font-family: 'Open Sans', sans-serif;font-weight:500;color:#d2625a;text-transform:uppercase;margin-bottom:2px;}
+/* imagen blog */
+#blog-imagen{-webkit-order:1;width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#blog-imagen > img{align-self:center;-webkit-align-self:center;width:650px;height:auto;}
+#blog-imagen-adicional{width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;margin-top:10px;margin-bottom:-16px;}
+#blog-imagen-adicional > img{align-self:center;-webkit-align-self:center;width:650px;height:auto;}
+#blog-imagen-adicional .espacio{margin-top:25px;}
+#blog-imagen-adicional-vertical{width:100%;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#blog-imagen-adicional-vertical > img{align-self:center;-webkit-align-self:center;width:380px;height:auto;}
+#blog-imagen-adicional-vertical .espacio{margin-top:25px;}
+#atraccion-informacion .subtitulo{position:relative;float:left;margin:20px 0 0;letter-spacing:-0.5px;font-family:'PT Sans Narrow',sans-serif;font-weight:300;font-size:28px;text-align:left;width:100%;}
+#atraccion-informacion .subtitulo a{color:#d2625a;}#atraccion-informacion .subtitulo a:hover{color:#c73c32;text-decoration:underline;}#atraccion-informacion .subtitulo a:visited{color:#d2625a;}
+#atraccion-informacion .fa-angle-right{color:#c73c32;}
+#blog-imagen-adicional .autor, #blog-imagen-adicional-vertical .autor{width:100%;height:auto;text-align:center;font-family: 'Didact Gothic', sans-serif;font-weight:100;font-size:14px;color:#555;}
+#blog-imagen-adicional a:hover, #blog-imagen-adicional-vertical a:hover{color:#d2625a!important;}#blog-imagen-adicional a:visited, #blog-imagen-adicional-vertical a:visited{color:#555;}#blog-imagen-adicional a:link, #blog-imagen-adicional-vertical a:link{color:#555;}
+/* blog relacionados */
+#titulo-blog-relacionado{text-indent:15px;position:relative;float:left;margin:30px 0 10px;letter-spacing:-0.5px;padding-top:25px;font-family:'Montserrat', sans-serif;font-weight:300;font-size:22px;text-align:left;width:100%;height:auto;color:#303030;border-top:1px solid #ddd;-webkit-order:2;}
+#blog-relacionado-envoltorio{width:100%;height:auto;float:left;display:inline-flex;display:-webkit-inline-flex;-webkit-order:3;}
+#blog-relacionado{width:100%;height:auto;display:inline-flex;display:-webkit-inline-flex;padding:20px 0;border-bottom:1px solid #e9edef;-webkit-transition:0.25s ease-in-out;-ms-transition:0.25s ease-in-out;-moz-transition:0.25s ease-in-out;-o-transition:0.25s ease-in-out;transition:0.25s ease-in-out;}
+#blog-relacionado:hover{background-color:#f7f7f7;padding-left:20px;-webkit-transition:0.25s ease-in-out;-ms-transition:0.25s ease-in-out;-moz-transition:0.25s ease-in-out;-o-transition:0.25s ease-in-out;transition:0.25s ease-in-out;}
+#blog-relacionado .imagen{width:290px;height:auto;padding:0;margin:0;}
+#blog-relacionado img{display:inline-flex;display:-webkit-inline-flex;width:100%;height:auto;}
+#blog-relacionado .texto{width:calc(100% - 20px - 20px);height:auto;float:left;display:flex;display:-webkit-flex;-webkit-flex-direction:column;margin:0 20px 10px;}
+#blog-relacionado .etiqueta{width:100%;height:auto;float:left;font-family: 'Raleway', sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;color:#fab23a;}#blog-relacionado .etiqueta a:hover{text-decoration:underline;}#blog-relacionado .etiqueta a:link{color:#fab23a;}#blog-relacionado .etiqueta a:visited{color:#fab23a;}
+#blog-relacionado .titulo{font-family:'PT Sans Narrow',sans-serif;font-weight:600;color:#000;font-size:32px;padding:0 0 5px;margin:0;letter-spacing:1.2px;width:100%;height:auto;float:left;letter-spacing:-0.2px;text-transform:capitalize;line-height:35px}#blog-relacionado a:hover .titulo {text-decoration:underline;}
+#blog-relacionado .titulo a{color:#fff;}#blog-relacionado .titulo a:visited{color:#fff;}#blog-relacionado .titulo a:link{color:#fff;}
+#blog-relacionado .texto-articulo{font-family: 'Raleway', sans-serif;font-weight:300;font-size:14px;width:100%;height:auto;color:#555;float:left;padding:15px 0 5px;margin:0;cursor:default;text-transform:capitalize;line-height:22px;}
+#blog-relacionado .informacion{font-family: 'Raleway', sans-serif;font-weight:100;font-size:14px;width:100%;height:auto;color:#555;float:left;padding:0;margin:0;cursor:default;}#blog-relacionado .informacion .fa-calendar{color:#fab23a;}#blog-relacionado .informacion .fa-angle-right{color:#fab23a;}#blog-relacionado .informacion strong{color:#fab23a;}
+/* barra temas blog */
+#barra-temas-blog{width:100%;height:auto;float:left;position:relative;font-size:18px;border-top:2px solid #fab23a;border-bottom:2px solid #fab23a;font-style:bold;margin:10px 0 5px;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}
+#barra-temas-blog span{width:25%;height:auto;position:relative;float:left;margin:0;padding:5px 0;transition:.5s;}
+#barra-temas-blog .parte{position:relative;margin:0;padding:0;color:#fab23a;transition:.5s;}
+#barra-temas-blog span:hover{color:#fff;background-color:#fab23a;transition:.5s;}
+/* publicidad lateral */
+#blog-publicidad-lateral-rectangulo{height:auto;float:right;position:relative;display:block;width:300px;margin:0 auto 20px;}
+#blog-publicidad-lateral-rectangulo img{position:-webkit-sticky;position:sticky;width:300px;float:left;top:15px;overflow:hidden;}
+/* barra blog */
+#blog-bloque-top{float:left;width:100%;height:auto;margin:0 auto;display:flex;display:-webkit-flex;-webkit-flex-direction:column;}
+#blog-links{flex:1;-webkit-flex:1;}
+#barra-blog-envoltorio{width:100%;height:auto;margin-top:15px;}
+#barra-blog{flex:1;-webkit-flex:1;-webkit-order:1;width:100%;height:auto;}
+#barra-blog .ciudad{display:inline-flex;display:-webkit-inline-flex;width:calc(100% - 3px);height:auto;list-style:none;padding:0;margin:0;font-family: 'Open Sans', sans-serif;font-size:15px;border-left:3px solid #d2625a;}
+#barra-blog .ciudad a{height:auto;color:#888;padding:0 4pt;}#barra-blog .ciudad a:hover{color:#d2625a;}
+#barra-blog .separador{color:#888;}
+/* facebook comments */
+#comentarios{-webkit-order:10;margin-top:15px;}
+/* CIUDAD */
+/* imagen portada ciudad */
+#envoltorio-imagen-portada{width:100%;height:auto;position:relative;float:left;}
+#envoltorio-imagen-portada .portada{width:100%;height:auto;position:relative;float:left;border-bottom:3px solid #d2625a;box-shadow:1px 1px 1px rgba(45,43,43,0.26);}
+#envoltorio-imagen-portada img{object-fit:cover;}
+/* titulo ciudad */
+@media only screen and (min-width: 536px){
+#ciudad-links{flex:1;-webkit-flex:1;position:relative;float:left;z-index:2;top:-78px;margin-bottom:-60px;border-left:3px solid #d2625a;}
+#barra-ciudad .titulo{font-family: 'Quicksand', sans-serif;font-size:45px;height:auto;color:#fff;padding:0 4pt;margin:0;font-weight:400;text-transform:uppercase;cursor:default;}}
+@media only screen and (max-width: 535px){
+#ciudad-links{flex:1;-webkit-flex:1;position:relative;float:left;z-index:2;top:-60px;margin-bottom:-60px;border-left:3px solid #d2625a;}
+#barra-ciudad .titulo{font-family: 'Quicksand', sans-serif;font-size:30px;height:auto;color:#fff;padding:0 4pt;margin:0;font-weight:400;text-transform:uppercase;cursor:default;}}
+#barra-ciudad{flex:1;-webkit-flex:1;-webkit-order:1;width:100%;height:auto;}
+#barra-ciudad .ciudad{display:inline-flex;display:-webkit-inline-flex;width:calc(100% - 3px);height:auto;list-style:none;padding:0;margin:0;font-family: 'Open Sans', sans-serif;font-size:15px;}
+#barra-ciudad .subtitulo{width:100%;}
+#barra-ciudad .ciudad a{height:auto;color:#fff;padding:0 4pt;}#barra-ciudad .ciudad a:hover{color:#d2625a;}
+#barra-ciudad .separador{color:#fff;cursor:default;}
+/* BUSCAR NAV */
+#envoltorio-nav-buscar{width:100%;height:auto;padding:0;margin:0;background-color:#fff;flex:1;-webkit-flex:1;}
+#ul-buscar{list-style:none;padding:0;margin:0;width:100%;height:auto;}
+#ul-buscar .titulo{float:left;position:relative;padding:20px 16px 20px 0;background-color:transparent;color:#777;font-family: 'Open Sans', sans-serif;font-size:16px;text-align:left;font-weight:bold;}#ul-buscar a:hover{color:#d2625a;}
+#ul-buscar .tag{color:#d2625a;text-transform:capitalize;}
+#ul-buscar .derecha{text-align:right;float:right;right:0;padding-right:0;}
+/* CARTA */
+#carta .icono-atraccion, #subcarta .icono-atraccion{fill:#8f8585;transition:.3s;}#carta .envoltorio-icono:hover .icono-atraccion, #subcarta .envoltorio-icono:hover .icono-atraccion{fill:#d2625a;transition:.3s;}
+#carta .estrella-atraccion, #subcarta .estrella-atraccion{fill:#fab23a;transition:.3s;}#carta .envoltorio-estrella:hover .estrella-atraccion, #subcarta .envoltorio-estrella:hover .estrella-atraccion{fill:#ffa64c;}
+#buscador-cartas > h3{color:#333;margin:15px 0 5px;width:100%;line-height:180%;font-family:"Verdana","Helvetica","sans-serif",sans-serif;margin-bottom:5px;font-weight:300;font-size:16px;letter-spacing:-0.2px;}
+#buscador-cartas .atraccion{color:#222;padding-bottom:3px;font-size:18px;width:100%;float:left;position:relative;}
+#buscador-cartas .atraccion:after{content:"";width:10%;position:absolute;top:0;left:0;bottom:0;right:0;border-bottom:1px solid #d2625a;z-index:9;}
+#buscador-cartas .atraccion:before{content:"";width:90%;position:absolute;top:0;left:10%;bottom:0;right:0;border-bottom:1px solid #ddd;z-index:9;}
+@media only screen and (min-width:951px){
+#buscador-cartas{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:2;}
+#envoltorio-carta{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:stretch;height:auto;padding:5px;width:calc(33.3333% - 5px - 5px);}
+#envoltorio-carta:hover .nombre{color:#c73c32;transition:.3s;}
+#carta{box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#carta:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#carta .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#carta img{width:100%;height:158px;border-bottom:1px solid #c73c32;}
+/* badges */
+#badges{width:78px;height:auto;margin:-28px 0 0 15px;background-color:transparent;z-index:99;position:relative;float:left;}
+/* carta icono */
+#carta .envoltorio-icono{position:relative;float:left;width:30px;height:30px;margin:0 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);background-color:#fff;border-radius:50%;}
+#carta .icono-atraccion{width:25px;height:25px;cursor:pointer;margin-left:2.5px;margin-top:2.5px;}
+#carta .icono-texto{display:none;}
+#carta .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* estrella */
+#carta .envoltorio-estrella{width:18px;height:18px;margin:7px 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:relative;float:left;background-color:#fff;border-radius:50%;}
+#carta .estrella-atraccion{width:18px;height:18px;}
+#carta .envoltorio-estrella:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-47px;margin-left:-4px;font-family: 'Open Sans', sans-serif;font-size:10px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:15px;}
+/* carta texto */
+#carta .envoltorio-texto{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;}
+#carta .nombre{color:#303030;font-size:17px;letter-spacing:-0.2px;font-family:'Montserrat',sans-serif;font-weight:500;padding:6px 12pt 8px;margin:0;position:relative;width:calc(100% - 24pt);height:auto;float:left;margin:0;}
+#carta .descripcion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:0;position:relative;}
+#carta .puntuacion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;display:flex;flex:1;align-items:flex-end;-webkit-box-flex:0;cursor:default;} #carta .puntuacion strong{color:#d2625a;font-weight:500;}
+#carta .localizacion{width:calc(100% - 24pt);margin:10px 12pt 0;cursor:default;}
+#carta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;padding:4pt 6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;transition:.5s;}#carta .regionyciudad:hover{border-radius:0.25rem;border:1px solid #d2625a;background-color:#d2625a;color:#fff;}
+#envoltorio-carta .etiquetas{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;margin-bottom:3px;font-family:'Montserrat',sans-serif;font-weight:400;font-size:13px;color:#a0522d;}
+/* SUBCARTA */
+#buscador-cartas{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:2;}
+#envoltorio-subcarta{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:stretch;height:auto;padding:5px;width:calc(33.3333% - 5px - 5px);}
+#envoltorio-subcarta:hover .nombre{color:#c73c32;transition:.3s;}
+#subcarta{box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#subcarta:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#subcarta .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#subcarta img{width:100%;height:158px;border-bottom:1px solid #c73c32;}
+/* subcarta icono */
+#subcarta .envoltorio-icono{position:relative;float:left;width:30px;height:30px;margin:0 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);background-color:#fff;border-radius:50%;}
+#subcarta .icono-atraccion{width:25px;height:25px;cursor:pointer;margin-left:2.5px;margin-top:2.5px;}
+#subcarta .icono-texto{display:none;}
+#subcarta .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#subcarta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* estrella */
+#subcarta .envoltorio-estrella{width:18px;height:18px;margin:7px 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:relative;float:left;background-color:#fff;border-radius:50%;}
+#subcarta .estrella-atraccion{width:18px;height:18px;}
+#subcarta .estrella-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:-8px;font-family: 'Open Sans', sans-serif;font-size:10px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#subcarta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* subcarta texto */
+#subcarta .envoltorio-texto{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;}
+#subcarta .subtitulo{display:none;}
+#subcarta .nombre{color:#303030;font-size:17px;letter-spacing:-0.2px;font-family:'Montserrat',sans-serif;font-weight:500;padding:6px 12pt 8px;margin:0;position:relative;width:calc(100% - 24pt);height:auto;float:left;}
+#subcarta .descripcion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:0;position:relative;}
+#subcarta .puntuacion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;display:flex;flex:1;align-items:flex-end;-webkit-box-flex:0;cursor:default;} #subcarta .puntuacion strong{color:#d2625a;font-weight:500;}
+#subcarta .localizacion{width:calc(100% - 24pt);margin:10px 12pt 0;cursor:default;}
+#subcarta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;padding:4pt 6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;transition:.5s;}#subcarta .regionyciudad:hover{border-radius:0.25rem;border:1px solid #d2625a;background-color:#d2625a;color:#fff;}
+}
+#envoltorio-carta .etiquetas, #envoltorio-subcarta .etiquetas{flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;font-family:'Montserrat',sans-serif;font-weight:400;font-size:13px;color:#a0522d;}
+#carta .localizacion .noespacio, #subcarta .localizacion .noespacio{margin-bottom:0;}
+#carta .etiqueta, #subcarta .etiqueta{display:inline-block;color:#918787;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:400;text-transform:capitalize;}#carta .etiqueta a, #subcarta .etiqueta a{color:#888;}#carta .etiqueta a:hover, #subcarta .etiqueta a:hover{color:#d2625a;text-decoration:underline;}
+@media only screen and (max-width: 950px) and (min-width: 425px){
+/* CARTA */
+#buscador-cartas{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:2;}
+#envoltorio-carta{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:stretch;height:auto;padding:5px;width:calc(50% - 5px - 5px);}
+#carta{box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#carta:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#carta .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#carta img{width:100%;height:158px;border-bottom:1px solid #c73c32;}
+/* badges */
+#badges{width:150px;height:auto;margin:-28px 0 0 15px;background-color:transparent;z-index:99;position:relative;float:left;}
+/* carta icono */
+#carta .envoltorio-icono{position:relative;float:left;width:30px;height:30px;margin:0 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);background-color:#fff;border-radius:50%;}
+#carta .icono-atraccion{width:25px;height:25px;cursor:pointer;margin-left:2.5px;margin-top:2.5px;}
+#carta .icono-texto{display:none;}
+#carta .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* estrella */
+#carta .envoltorio-estrella{width:18px;height:18px;margin:7px 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:relative;float:left;background-color:#fff;border-radius:50%;}
+#carta .estrella-atraccion{width:18px;height:18px;}
+#carta .estrella-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:-8px;font-family: 'Open Sans', sans-serif;font-size:10px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* carta texto */
+#carta .envoltorio-texto{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;}
+#carta .nombre{color:#303030;font-size:17px;letter-spacing:-0.2px;font-family:'Montserrat',sans-serif;font-weight:500;padding:6px 12pt 8px;margin:0;position:relative;width:calc(100% - 24pt);height:auto;float:left;}
+#carta .enlace:hover .nombre{color:#c73c32;}
+#carta .descripcion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:0;position:relative;}
+#carta .puntuacion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;display:flex;flex:1;align-items:flex-end;-webkit-box-flex:0;cursor:default;} #carta .puntuacion strong{color:#d2625a;font-weight:500;}
+#carta .localizacion{width:calc(100% - 24pt);margin:10px 12pt 0;cursor:default;}
+#carta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;padding:4pt 6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;transition:.5s;}#carta .regionyciudad:hover{border-radius:0.25rem;border:1px solid #d2625a;background-color:#d2625a;color:#fff;}
+/* SUBCARTA */
+#buscador-cartas{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:2;}
+#envoltorio-subcarta{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:stretch;height:auto;padding:5px;width:calc(50% - 5px - 5px);}
+#subcarta{box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#subcarta:hover{-webkit-transform:translateY(-6px);-moz-transform:translateY(-6px);transform:translateY(-6px);box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);}
+#subcarta .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#subcarta img{width:100%;height:158px;border-bottom:1px solid #c73c32;}
+/* badges */
+#badges{width:150px;height:auto;margin:-28px 0 0 15px;background-color:transparent;z-index:99;position:relative;float:left;}
+/* subcarta icono */
+#subcarta .envoltorio-icono{position:relative;float:left;width:30px;height:30px;margin:0 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);background-color:#fff;border-radius:50%;}
+#subcarta .icono-atraccion{width:25px;height:25px;cursor:pointer;margin-left:2.5px;margin-top:2.5px;}
+#subcarta .icono-texto{display:none;}
+#subcarta .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#subcarta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* estrella */
+#subcarta .envoltorio-estrella{width:18px;height:18px;margin:7px 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:relative;float:left;background-color:#fff;border-radius:50%;}
+#subcarta .estrella-atraccion{width:18px;height:18px;}
+#subcarta .estrella-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:-8px;font-family: 'Open Sans', sans-serif;font-size:10px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#subcarta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* subcarta texto */
+#subcarta .envoltorio-texto{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;}
+#subcarta .subtitulo{display:none;}
+#subcarta .nombre{color:#303030;font-size:17px;letter-spacing:-0.2px;font-family:'Montserrat',sans-serif;font-weight:500;padding:6px 12pt 8px;margin:0;position:relative;width:calc(100% - 24pt);height:auto;float:left;}
+#subcarta .enlace:hover .nombre{color:#c73c32;}
+#subcarta .descripcion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:0;position:relative;}
+#subcarta .puntuacion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;display:flex;flex:1;align-items:flex-end;-webkit-box-flex:0;cursor:default;} #subcarta .puntuacion strong{color:#d2625a;font-weight:500;}
+#subcarta .localizacion{width:calc(100% - 24pt);margin:10px 12pt 0;cursor:default;}
+#subcarta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;padding:4pt 6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;transition:.5s;}#subcarta .regionyciudad:hover{border-radius:0.25rem;border:1px solid #d2625a;background-color:#d2625a;color:#fff;}
+}
+@media only screen and (max-width:424px){
+/* CARTA */
+#buscador-cartas{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;-webkit-order:2;}
+#envoltorio-carta{display:-webkit-flexbox;display:-ms-flexbox;display:-webkit-flex;display:flex;align-self:stretch;height:auto;padding:5px;width:calc(100% - 5px - 5px);}
+#carta{box-sizing:inherit;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);display:flex;flex-direction:column;overflow:hidden;border-radius:0.25rem;transition:.5s;}
+#carta .contenido{display:flex;flex:1 1 auto;flex-direction:column;}
+#carta img{width:100%;height:245px;border-bottom:1px solid #c73c32;}
+/* carta badges */
+#carta #badges{width:100%;height:auto;margin:-28px 0 0 15px;background-color:transparent;z-index:99;position:relative;float:left;}
+/* carta icono */
+#carta .envoltorio-icono{position:relative;float:left;width:30px;height:30px;margin:0 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);background-color:#fff;border-radius:50%;}
+#carta .icono-atraccion{width:25px;height:25px;cursor:pointer;margin-left:2.5px;margin-top:2.5px;}
+#carta .icono-texto{display:none;}
+#carta .icono-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:0;font-family: 'Open Sans', sans-serif;font-size:12px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* estrella */
+#carta .envoltorio-estrella{width:18px;height:18px;margin:7px 5px 0 0;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:relative;float:left;background-color:#fff;border-radius:50%;}
+#carta .estrella-atraccion{width:18px;height:18px;}
+#carta .estrella-atraccion:hover .icono-texto{display:none;z-index:99;width:auto;text-align:center;display:block;margin-top:-30px;margin-left:-8px;font-family: 'Open Sans', sans-serif;font-size:10px;letter-spacing:1px;position:absolute;padding:3px 8px;transition:.5s;background-color:#8e8e93;color:#fff;border-radius:10px;box-shadow:0 1px 1px rgba(45,43,43,0.26);cursor:default;}
+#carta .icono-texto:before{content:"";width:0;position:absolute;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #8e8e93;top:20px;}
+/* carta texto */
+#carta .envoltorio-texto{width:100%;height:auto;flex:1;display:flex;justify-content:center;flex-direction:column;align-self:baseline;}
+#carta .nombre{color:#303030;font-size:20px;letter-spacing:-0.2px;font-family:'Montserrat',sans-serif;font-weight:500;padding:6px 12pt 8px;margin:0;position:relative;width:calc(100% - 24pt);height:auto;float:left;}
+#carta .descripcion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:0;position:relative;}
+#carta .puntuacion{color:#888;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 12pt 5px;margin:10px 0;position:relative;display:flex;flex:1;align-items:flex-end;-webkit-box-flex:0;cursor:default;} #carta .puntuacion strong{color:#d2625a;font-weight:500;}
+#carta .localizacion{width:calc(100% - 24pt);margin:10px 12pt 0;cursor:default;}
+#carta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;padding:4pt 6pt;text-align:center;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;transition:.5s;}
+/* SUBCARTA */
+#envoltorio-subcarta{position:relative;float:left;height:auto;padding:5px;width:calc(100% - 5px - 5px);}
+#subcarta{width:100%;height:auto;position:relative;float:left;background-color:#fff;box-shadow:0 1px 1px rgba(45,43,43,0.26);}
+#subcarta .contenido{display:inline-block;position:relative;float:left;width:100%;}
+#subcarta img{width:100px;height:65px;position:relative;float:left;}
+/* subcarta icono */
+#subcarta .envoltorio-icono{width:20px;height:20px;margin:18.5px 0 0 -15.5px;padding:5px;box-shadow:0 1px 1px rgba(45,43,43,0.26);position:absolute;background-color:#fff;border-radius:50%;z-index:99;}
+#subcarta .icono-atraccion{width:18px;height:18px;cursor:pointer;margin-left:1px;margin-top:1px;}
+#subcarta .icono-texto{display:none!important;}
+#subcarta .envoltorio-estrella{display:none!important;}
+/* subcarta texto */
+#subcarta .envoltorio-texto{width:calc(100% - 100px);height:calc(65px - 14px - 3pt);position:relative;float:left;}
+#subcarta .subtitulo{color:#aaa;font-size:11px;letter-spacing:-0.5px;font-family:'Montserrat',sans-serif;font-weight:300;padding:7px 10pt 0 15pt;margin:0;position:relative;width:calc(100% - 25pt);height:auto;float:left;text-transform:uppercase;}
+#subcarta .nombre{color:#303030;font-size:15.5px;letter-spacing:-0.5px;font-family:'Montserrat',sans-serif;font-weight:500;padding:0 10pt 0 15pt;margin:0;position:relative;width:calc(100% - 25pt);height:auto;float:left;}
+#subcarta .descripcion{display:none;}
+#subcarta .puntuacion{bottom:0;position:absolute;color:#888;font-size:11px;font-family:'Montserrat', sans-serif;font-weight:300;padding:0 10pt 3pt 15pt;margin:0;float:left;cursor:default;width:calc(100% - 100px - 25pt);height:auto;margin-left:100px;} #subcarta .puntuacion strong{color:#d2625a;font-weight:400;}
+#subcarta .regionyciudad{display:inline-block;border-radius:0.25rem;margin-bottom:5px;border:1px solid #d2625a;color:#d2625a;font-size:13px;font-family:'Montserrat', sans-serif;font-weight:300;}
+#subcarta .localizacion{display:none;}
+}
+/* FOOTER 1&2 */
+@media only screen and (min-width: 864px){
+/* FOOTER */
+#footer{position:relative;float:left;bottom:0;left:0;width:100%;background-color:transparent;border-top:3px solid #d2625a;}
+#footer .logo{position:relative;float:left;width:calc(245px - 25px);padding:25px 0 15px 25px;}
+#envoltorio-footer-bloque{position:relative;float:left;width:calc(100% - 50px - 245px);padding:15px 25px;}
+#footer2{display:none;}
+/* footer bloque */
+#footer-bloque{position:relative;float:left;width:calc(15% - 20px);height:auto;margin:10px;}
+#footer-bloque .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque .espacio{margin-bottom:10px;}
+#footer-bloque .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque a:link{color:#555;}#footer-bloque a:visited{color:#555;}
+/* footer bloque ciudad */
+#footer-bloque-ciudad{position:relative;float:left;width:calc(60% - 20px);height:auto;margin:10px;}
+#footer-bloque-ciudad .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-ciudad .espacio{margin-bottom:10px;}
+#footer-bloque-ciudad .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-ciudad a{width:33.333%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-ciudad a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-ciudad a:link{color:#555;}#footer-bloque-ciudad a:visited{color:#555;}
+/* footer bloque blog */
+#footer-bloque-blog{position:relative;float:left;width:calc(25% - 20px);height:auto;margin:10px;}
+#footer-bloque-blog .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-blog .espacio{margin-bottom:10px;}
+#footer-bloque-blog .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-blog a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-blog a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-blog a:link{color:#555;}#footer-bloque-blog a:visited{color:#555;}
+/* footer pie */
+#footer-pie{position:relative;float:left;width:calc(100% - 100px);height:auto;padding:5px 50px;background:rgba(0,0,0, 0.82);color:#fff;}
+#footer-pie .web{position:relative;float:left;width:50%;height:40px;line-height:40px;font-family: 'Raleway', sans-serif;font-weight:300;font-size:18px;cursor:default;}
+#footer-pie .redes{position:relative;float:left;width:50%;height:auto;display:inline-block;float:left;text-align:right;list-style:none;margin:0;padding:0;}
+#footer-pie .redes a{display:inline-block;text-decoration:none;color:#fff;font-size:34px;letter-spacing:1px;}
+}
+@media only screen and (max-width: 863px) and (min-width: 676px){
+/* FOOTER 2 */
+#footer2{position:relative;float:left;bottom:0;left:0;width:100%;background-color:transparent;border-top:3px solid #d2625a;}
+#footer2 .logo{position:relative;float:left;width:calc(245px - 25px);padding:25px 0 15px 25px;}
+#envoltorio-footer-bloque{position:relative;float:left;width:calc(100% - 50px - 245px);padding:15px 25px;}
+#footer{display:none;}
+/* footer bloque */
+#footer-bloque{position:relative;float:left;width:calc(33.333% - 20px);height:auto;margin:10px;}
+#footer-bloque .titulo{width:100%;position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 0;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque .espacio{margin-bottom:10px;}
+#footer-bloque .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque a:link{color:#555;}#footer-bloque a:visited{color:#555;}
+/* footer bloque ciudad */
+#footer-bloque-ciudad{position:relative;float:left;width:calc(60% - 20px);height:auto;margin:10px;}
+#footer-bloque-ciudad .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-ciudad .espacio{margin-bottom:10px;}
+#footer-bloque-ciudad .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-ciudad a{width:33.333%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-ciudad a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-ciudad a:link{color:#555;}#footer-bloque-ciudad a:visited{color:#555;}
+/* footer bloque blog */
+#footer-bloque-blog{position:relative;float:left;width:calc(25% - 20px);height:auto;margin:10px;}
+#footer-bloque-blog .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-blog .espacio{margin-bottom:10px;}
+#footer-bloque-blog .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-blog a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-blog a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-blog a:link{color:#555;}#footer-bloque-blog a:visited{color:#555;}
+/* footer pie */
+#footer-pie{position:relative;float:left;width:calc(100% - 100px);height:auto;padding:5px 50px;background:rgba(0,0,0, 0.82);color:#fff;}
+#footer-pie .web{position:relative;float:left;width:50%;height:40px;line-height:40px;font-family: 'Raleway', sans-serif;font-weight:300;font-size:18px;cursor:default;}
+#footer-pie .redes{position:relative;float:left;width:50%;height:auto;display:inline-block;float:left;text-align:right;list-style:none;margin:0;padding:0;}
+#footer-pie .redes a{display:inline-block;text-decoration:none;color:#fff;font-size:34px;letter-spacing:1px;}
+}
+@media only screen and (max-width: 675px){
+/* FOOTER 2 */
+#footer2{position:relative;float:left;bottom:0;left:0;width:100%;background-color:transparent;border-top:3px solid #d2625a;}
+#footer2 .logo{position:relative;float:left;width:calc(100% - 40%);padding:20px 20% 0 20%;}
+#envoltorio-footer-bloque{position:relative;float:left;width:calc(100% - 40px);padding:0px 20px 30px;}
+#footer{display:none;}
+/* footer bloque */
+#footer-bloque{position:relative;float:left;width:calc(100% - 20px);height:auto;margin:10px 10px 0;}
+#footer-bloque .titulo{width:100%;position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 0;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque .espacio{margin-bottom:10px;}
+#footer-bloque .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque a:link{color:#555;}#footer-bloque a:visited{color:#555;}
+/* footer bloque ciudad */
+#footer-bloque-ciudad{position:relative;float:left;width:calc(60% - 20px);height:auto;margin:10px;}
+#footer-bloque-ciudad .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-ciudad .espacio{margin-bottom:10px;}
+#footer-bloque-ciudad .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-ciudad a{width:33.333%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-ciudad a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-ciudad a:link{color:#555;}#footer-bloque-ciudad a:visited{color:#555;}
+/* footer bloque blog */
+#footer-bloque-blog{position:relative;float:left;width:calc(25% - 20px);height:auto;margin:10px;}
+#footer-bloque-blog .titulo{width:calc(100% - 15px);position:relative;float:left;font-family:'Montserrat', sans-serif;font-weight:300;font-size:15px;padding:0 0 5px 15px;border-bottom:1px solid #d2625a;cursor:default;}
+#footer-bloque-blog .espacio{margin-bottom:10px;}
+#footer-bloque-blog .lista{width:100%;position:relative;float:left;margin-top:10px;border-color:#ddd;height:30px;}
+#footer-bloque-blog a{width:100%;height:auto;position:relative;float:left;color:#555;padding:2.5px 0;font-family: 'Raleway', sans-serif;font-weight:200;font-size:15px;text-indent:15px;border-radius:2.5px;}
+#footer-bloque-blog a:hover{background-color:#d2625a;color:#fff!important;}#footer-bloque-blog a:link{color:#555;}#footer-bloque-blog a:visited{color:#555;}
+/* footer pie */
+#footer-pie{position:relative;float:left;width:calc(100% - 40px);height:auto;padding:5px 20px;background:rgba(0,0,0, 0.82);color:#fff;}
+#footer-pie .web{position:relative;float:left;width:50%;height:36px;line-height:36px;font-family: 'Raleway', sans-serif;font-weight:300;font-size:12px;cursor:default;}
+#footer-pie .redes{position:relative;float:left;width:50%;height:auto;display:inline-block;float:left;text-align:right;list-style:none;margin:0;padding:0;}
+#footer-pie .redes a{display:inline-block;text-decoration:none;color:#fff;font-size:30px;letter-spacing:1px;}
+}
+/* 404 */
+#error{width:100%;height:auto;position:relative;float:left;font-family:'VT323', monospace;font-weight:100;font-size:30px;text-align:center;padding:80px 0;color:#555;border-bottom:1px solid #ccc;cursor:default;margin-bottom:25px;}
+#error strong{font-size:70px;font-weight:800;color:#d2625a;}
+/* SITEMAP */
+#sitemap{-webkit-order:1;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:100%;height:auto;}
+#sitemap .region{display:inline-flex;display:-webkit-inline-flex;width:100%;height:auto;color:#5F5346;font-family:'Montserrat', sans-serif;font-size:20px;margin:15px 0 0;padding:0;}#sitemap .region:link{color:#5F5346;}#sitemap .region:visited{color:#5F5346;}#sitemap .region a{color:#5F5346;}
+#sitemap .prefectura{display:inline-flex;display:-webkit-inline-flex;width:100%;height:auto;color:#5F5346;font-family:'Montserrat', sans-serif;font-size:18px;margin:15px 0 0;padding:0;}#sitemap .prefectura:link{color:#5F5346;}#sitemap .prefectura:visited{color:#5F5346;}#sitemap .prefectura a{color:#5F5346;}
+#sitemap .ciudad{width:100%;height:auto;position:relative;float:left;padding:10px 0 5px;}
+#sitemap .atraccion{width:100%;height:auto;position:relative;float:left;padding:3px 0;text-indent:15px;}
+#sitemap .ciudad .nombre{font-family:'Open Sans', sans-serif;color:#d2625a;font-size:18px;font-weight:700;padding-right:5px;}#sitemap .nombre a{color:#d2625a;}#sitemap .nombre:visited{color:#d2625a;}#sitemap .nombre:link{color:#d2625a;}#sitemap .atraccion .nombre{font-family:'Open Sans', sans-serif;color:#d2625a;font-size:15px;font-weight:500;padding:0 5px;}
+#sitemap .fa-star{text-indent:0;color:#fab23a;}#sitemap .fa-angle-right{text-indent:0;color:#ccc;}
+#sitemap .informacion{font-family:'Droid Serif', sans-serif;font-size:14px;color:#555;font-weight:300;padding-left:15px;}
+#sitemap a:hover{color:#c73c32!important;text-decoration:underline;}
+/* RUTA */
+#ruta{-webkit-order:1;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:100%;height:auto;margin-bottom:16px;}
+#ruta .pasos{width:100%;height:200px;position:relative;float:left;padding:20px 0 19px;border-bottom:1px solid #ddd;}
+#ruta .noborder{border:none;}
+#ruta .imagen{width:47.5%;height:auto;position:relative;float:left;margin:0;}
+#ruta .imagen2{width:47.5%;height:auto;position:relative;float:right;margin:0;}
+#ruta img{width:100%;height:200px;margin:0;padding:0;float:left;position:relative;}
+#ruta .text-envoltorio{display:table;float:right;height:200px;width:calc(52.5% - 30px);margin:0 15px;}
+#ruta .text-envoltorio2{display:table;float:left;height:200px;width:calc(52.5% - 30px);margin:0 15px;}
+#ruta .texto{display:table-cell;vertical-align:middle;margin:0;text-align:left;padding:0;line-height:21px;}
+#ruta .informacion{display:table-cell;vertical-align:middle;}
+#ruta .titulo{width:100%;height:auto;position:relative;float:left;margin:0;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;color:#555;}#ruta .titulo a{color:#555;}#ruta .titulo a:hover{color:#111!important;}#ruta .titulo a:link{color:#555;}#ruta .titulo a:visited{color:#555;}
+#ruta .descripcion{font-family:'Montserrat',sans-serif;font-weight:300;font-size:14px;}
+#ruta .descripcion a{color:#d2625a;font-weight:500;transition:.3s;}#ruta .descripcion a:hover{color:#c73c32!important;}#ruta .descripcion a:visited{color:#d2625a;}#ruta .descripcion a:link{color:#d2625a;}
+/* enlaces relacionados */
+#atraccion-informacion .fa-external-link{font-size:23px;} .posicion-enlaces-relacionados{-webkit-order:8!important;}
+#envoltorio-articulos-relacionados{width:100%;height:auto;float:left;position:relative;}
+#envoltorio-articulos-relacionados .izquierda{float:left;}#envoltorio-articulos-relacionados .derecha{float:right;}
+#enlaces-relacionados{width:50%;height:auto;position:relative;float:left;}
+#enlaces-relacionados .idioma{width:100%;height:auto;position:relative;float:left;margin-top:25px;padding-bottom:3px;border-bottom:1px dotted #ddd;font-size:15px;font-family: 'Montserrat', sans-serif;font-weight:500;color:#918787;text-transform:uppercase;}
+#enlaces-relacionados ul{padding-left:1.2em;}
+#enlaces-relacionados .titulo{width:100%;height:auto;position:relative;float:left;font-size:14.5px;font-family: 'Open Sans', sans-serif;font-weight:600;color:#918787;margin-top:20px;}#enlaces-relacionados a{color:#ca6b6b;}#enlaces-relacionados a:hover{color:#c73c32;cursor:pointer;}
+#enlaces-relacionados .subtexto{width:100%;height:auto;position:relative;float:left;font-size:13px;font-family: 'Open Sans', sans-serif;font-weight:100;color:#777;margin-top:3px;}
+/* TABLA FUJI */
+#tabla-fuji{font-size:12px;padding:0pt 10pt;font-family: 'Open Sans', sans-serif;}
+#tabla-fuji table{float:left;position:relative;width:100%;}
+#tabla-fuji th{color:#fff;background-color:#c73c32;text-align:left;}
+#tabla-fuji td{text-align:center;}
+#tabla-fuji .diagonal{position:relative;background:linear-gradient(to right bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 49.9%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,0) 51.1%,rgba(0,0,0,0) 100%);}
+/* MEJORAR */
+#mejorar{width:100%;height:auto;float:left;padding:15px 0 15px;}
+#mejorar .lapiz{text-align:left;font-family: 'Open Sans', sans-serif;font-weight:200;font-size:14px;color:#555;}
+#mejorar .lapiz a{color:#d2625a;}#mejorar .lapiz a:hover{color:#c73c32;text-decoration:underline;}#mejorar .lapiz a:link{color:#d2625a;}#mejorar .lapiz a:visited{color:#d2625a;}
+
+@media only screen and (max-width: 1024px){
+#envoltorio-navegador{display:none;}
+#nav-smartphone-display{display:block;}
+}
+
+@media only screen and (max-width: 863px) and (min-width: 600px){
+#body{width:calc(100% - 30px - 30px);margin:0 auto;height:auto;}
+#atraccion-bloque-principal{width:100%;height:auto;}
+#atraccion-imagen, #blog-imagen{width:100%;margin:0 -30px;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#atraccion-imagen > img, #blog-imagen > img{width:100%;align-self:center;-webkit-align-self:center;}
+#atraccion-bloque-lateral{display:none;}
+#atraccion-publicidad-top{display:none;}
+#atraccion-publicidad-top-smartphone{display:block;width:320px;height:auto;margin:10px auto;}
+#index-publicidad-media{width:100%;height:auto;position:relative;float:left;padding:25px 0;margin:25px 0;border-top:1px dashed #e9edef;border-bottom:1px dashed #e9edef;}
+#f{display:none;}
+#nav-smartphone-display{display:block;}
+#atraccion-bloque-lateral{display:none;}
+#blog-publicidad-lateral-rectangulo{display:none;}
+#atraccion-publicidad-lateral-rectangulo{display:none;}
+/* IMAGEN PORTADA */
+#portada-imagen{width:100%;height:auto;float:left;position:relative;}
+#portada-imagen img{width:100%;}
+#portada-imagen .texto{cursor:default;position:absolute;text-align:center;bottom:25px;width:100%;}
+#portada-imagen .titulo{font-family:'Railway',sans-serif;font-size:2.5em;color:#fff;margin:0;}
+#portada-imagen .subtitulo{font-family: 'Open Sans', sans-serif;font-weight:300;font-size:1.5em;color:#fff;}
+#index-titulo-blog{width:calc(100% - 20px);height:auto;float:left;position:relative;font-size:18px;border-top:1px solid #fab23a;border-bottom:1px solid #fab23a;font-style:bold;margin:10px 10px 0;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}
+
+}
+@media only screen and (max-width: 650px){
+#atraccion-imagen .mapa{display:none;}
+#atraccion-imagen .mapa2{display:block;align-self:center;-webkit-align-self:center;width:100%;height:auto;margin:0;padding:0;}
+}
+@media only screen and (max-width: 599px){
+#body{width:calc(100% - 15px - 15px);margin:0 auto;height:auto;}
+#atraccion-bloque-principal{width:100%;height:auto;}
+#atraccion-imagen, #blog-imagen{width:100%;margin:0 -15px;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#atraccion-imagen > img, #atraccion-imagen-adicional > img, #blog-imagen > img, #blog-imagen-adicional > img{width:100%;align-self:center;-webkit-align-self:center;}
+#atraccion-imagen .mapa{display:none;}
+#atraccion-imagen .mapa2{display:block;align-self:center;-webkit-align-self:center;width:100%;height:auto;margin:0;padding:0;}
+#atraccion-imagen-adicional, , #blog-imagen-adicional{width:100%;margin:0;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:auto;}
+#lista-hoteles{display:flex;padding:5px;width:calc(50% - 5px - 5px);}
+#atraccion-bloque-lateral{display:none;}
+#atraccion-publicidad-top{display:none;}
+#atraccion-publicidad-top-smartphone{display:block;width:320px;height:auto;margin:10px auto;}
+#index-publicidad-media{width:100%;height:auto;position:relative;float:left;padding:25px 0;margin:25px 0;border-top:1px dashed #e9edef;border-bottom:1px dashed #e9edef;}
+#envoltorio-navegador{display:none;}
+#nav-smartphone-display{display:block;}
+#atraccion-bloque-lateral{display:none;}
+#blog-publicidad-lateral-rectangulo{display:none;}
+#atraccion-publicidad-lateral-rectangulo{display:none;}
+/* ATRACCION */
+#atraccion-titulo a{width:35px;height:35px;float:left;position:relative;}
+#atraccion-titulo .titulo-principal{width:100%;float:left;position:relative;font-family:'PT Sans Narrow',sans-serif;font-size:30px;color:#303030;cursor:default;text-align:left;margin-top:3.5px;margin-left:-35px;text-indent:40px;line-height:120%;}
+#atraccion-titulo .titulo-principal:first-letter{text-transform:capitalize;}
+#atraccion-titulo .icono-atraccion{margin-right:10px;margin-top:0;float:left;position:relative;width:35px;height:35px;cursor:pointer;display:inline-block;}
+#barra-atraccion-envoltorio{width:100%;height:auto;margin:15px 0;position:relative;float:left;}
+#barra-atraccion .ciudad{position:relative;float:left;width:calc(100% - 3px);height:auto;list-style:none;padding:0;margin:0;font-family: 'Open Sans', sans-serif;font-size:13px;border-left:3px solid #d2625a;}
+#ul-atraccion a{float:left;position:relative;padding:10px 16px 0 0;background-color:transparent;color:#777;font-family: 'Open Sans', sans-serif;font-size:0.8em;text-align:left;font-weight:bold;}
+#ul-atraccion .botpad{padding-bottom:10px;}
+#ul-atraccion .titulo-nav{float:left;position:relative;padding:10px 16px 0 0;background-color:transparent;color:#d2625a;font-family: 'Open Sans', sans-serif;font-size:1em;text-align:left;font-weight:bold;line-height:16px;}
+#atraccion-informacion .informacion{line-height:180%;font-family:'Montserrat', sans-serif;font-weight:300;font-size:14px;letter-spacing:-0.2px;}
+#atraccion-informacion > h2, #atraccion-comollegar > h2, #atraccion-googlemaps > h2, #atraccion-horarioyprecio > h2, #atraccion-mymaps > h2, #atraccion-hoteles > h2, #atraccion-redes-envoltorio > h2, #buscador-cartas > h2{position:relative;float:left;margin:30px 0 10px;letter-spacing:-0.5px;padding-bottom:15px;font-family:'PT Sans Narrow',sans-serif;font-weight:300;font-size:25px;text-align:left;width:100%;}
+#atraccion-comollegar .texto{width:100%;padding-bottom:15px;margin:0;line-height:180%;font-family:'Open Sans', sans-serif;font-weight:300;font-size:14px;letter-spacing:0.1px;}
+#atraccion-horarioyprecio .texto{width:100%;padding-bottom:15px;margin:0;line-height:180%;font-family:'Open Sans', sans-serif;font-weight:300;font-size:14px;letter-spacing:0.1px;}
+/* IMAGEN PORTADA */
+#portada-imagen{width:100%;height:auto;float:left;position:relative;}
+#portada-imagen img{width:100%;}
+#portada-imagen .texto{cursor:default;position:absolute;text-align:center;bottom:10px;width:100%;}
+#portada-imagen .titulo{font-family:'Railway',sans-serif;font-size:2em;color:#fff;margin:0;}
+#portada-imagen .subtitulo{font-family: 'Open Sans', sans-serif;font-weight:300;font-size:1em;color:#fff;}
+#index-titulo-blog{width:calc(100% - 20px);height:auto;float:left;position:relative;font-size:18px;border-top:1px solid #fab23a;border-bottom:1px solid #fab23a;font-style:bold;margin:10px 10px 0;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}
+#barra-temas-blog{width:100%;height:auto;float:left;position:relative;font-size:.8em;border-top:2px solid #fab23a;border-bottom:2px solid #fab23a;font-style:bold;margin:10px 0 5px;text-align:center;color:#fab23a;font-family:'Raleway', sans-serif;cursor:default;}
+/* RUTA */
+#ruta{-webkit-order:1;display:flex;display:-webkit-flex;-webkit-flex-direction:column;width:100%;height:auto;margin-bottom:0;}
+#ruta .pasos{width:100%;height:auto;position:relative;float:left;padding:10px 0;border-bottom:1px solid #ddd;}
+#ruta .noborder{border:none;}
+#ruta .imagen{width:100%;height:auto;position:relative;float:left;margin:0;}
+#ruta .imagen2{width:100%;height:auto;position:relative;float:left;margin:0;}
+#ruta img{width:100%;height:auto;margin:0;padding:0;float:left;position:relative;}
+#ruta .text-envoltorio{display:table;float:left;height:auto;width:100%;margin:10px 0 0;}
+#ruta .text-envoltorio2{display:table;float:left;height:auto;width:100%;margin:10px 0 0;}
+#ruta .texto{display:table-cell;vertical-align:middle;margin:0;text-align:left;padding:0;}
+#ruta .descripcion{font-family:'Montserrat',sans-serif;font-weight:300;font-size:14px;margin:0;}
+#envoltorio-carta .localizacion{display:none;}
+/* atraccion-imagen-post */
+#atraccion-imagen-post{align-self:center;-webkit-align-self:center;width:calc(100% - 15px - 15px);height:auto;}
+#atraccion-imagen-post .arriba{width:calc(100% - 20px);height:auto;position:relative;float:left;padding:5px 10px;font-family:'Oswald',sans-serif;font-weight:100;font-size:15px;border-bottom:1px solid #ddd;}
+#atraccion-imagen-post .abajo .opcion{position:relative;float:left;margin-right:20px;}
+/* enlaces relacionados */
+#enlaces-relacionados{width:calc(100% - 15px - 15px);height:auto;position:relative;}
+/* ATRACCION NAV */
+#envoltorio-nav-atraccion{width:100%;height:40px;padding:0;background-color:#fff;flex:1;-webkit-flex:1;}
+
+}
+
+/* FORMULARIO CONTACTO */
+.form-style{max-width:450px;padding:40px 30px 40px 40px;font:13px Arial, Helvetica, sans-serif;margin:0 auto;background:#fff;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);-moz-box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 0px 15px rgba(0, 0, 0, 0.2);}
+.form-style-heading{font-weight:bold;font-style:italic;border-bottom:2px solid #ddd;margin-bottom:35px;font-size:15px;padding-bottom:3px;}
+.form-style label{display:block;margin:0px 0px 15px 0px;}
+.form-style label > span{width:100px;font-weight:bold;float:left;padding-top:0px;padding-right:5px;}
+.form-style span.required{color:red;}
+.form-style .tel-number-field{width:40px;text-align:center;}
+.form-style  .long{width:120px;}
+.form-style input.input-field{width:48%;}
+.form-style input.input-field,.form-style .tel-number-field,.form-style .textarea-field,.form-style .select-field{-webkit-transition:all 0.30s ease-in-out;-moz-transition:all 0.30s ease-in-out;-ms-transition:all 0.30s ease-in-out;-o-transition:all 0.30s ease-in-out;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border:1px solid #C2C2C2;box-shadow:1px 1px 4px #EBEBEB;-moz-box-shadow:1px 1px 4px #EBEBEB;-webkit-box-shadow:1px 1px 4px #EBEBEB;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;padding:7px;outline:none;}
+.form-style .input-field:focus,.form-style .tel-number-field:focus,.form-style .textarea-field:focus,.form-style .select-field:focus{border:1px solid #0C0;}
+.form-style .textarea-field{height:100px;width:55%;}
+.form-style input[type="button"],
+.form-style input[type="submit"] {-moz-box-shadow:inset 0px 1px 0px 0px #3985B1;-webkit-box-shadow:inset 0px 1px 0px 0px #3985B1;box-shadow:inset 0px 1px 0px 0px #3985B1;background-color:#216288;border:1px solid #17445E;display:inline-block;cursor:pointer;color:#fff;padding:8px 18px;text-decoration:none;font:12px Arial, Helvetica, sans-serif;}
+.form-style input[type="button"]:hover,
+.form-style input[type="submit"]:hover {background:linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);background-color:#28739E;}
+.form-style .success{background:#D8FFC0;padding:5px 10px 5px 10px;margin:0px 0px 5px 0px;border:none;font-weight:bold;color:#2E6800;border-left:3px solid #2E6800;}
+.form-style .error {background:#FFE8E8;padding:5px 10px 5px 10px;margin:0px 0px 5px 0px;border:none;font-weight:bold;color:#FF0000;border-left:3px solid #FF0000;}

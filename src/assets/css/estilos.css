@@ -1,0 +1,468 @@
+html{
+    margin:0;
+    padding:0;
+    }
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    }
+
+#body{
+    width:auto;
+    min-height:100%;
+    margin:0 auto;
+    padding:0;
+    background-color:#fff;
+    max-width:1080px;
+    }
+
+a{
+    text-decoration:none;
+    }
+
+.pin{
+    color:#c73c32;
+    }
+
+.subpin{
+    color:#d2625a;
+    }
+
+.fa-camera, .fa-bus, .fa-ticket, .fa-male, .fa-plane, .fa-volume-up, .fa-clock-o, .fa-calendar-times-o, .fa-at, .fa-circle-o, .fa-close, .fa-train, .fa-phone, .fa-cab, .fa-ship, .texto .fa-info{
+    color:#888;
+    }
+
+#hotel .fa-star, #hotel .fa-star-half-o, #hotel .fa-star-o{
+    color:#ffbc00;
+    }
+
+.fa-info-circle{
+    color:#0896ff;
+    }
+
+.fa-h3, .fa-exclamation-triangle{
+    color:#d2625a!important;
+    }
+
+.anchor{
+    display:block;
+    position:relative;
+    top:-60px;visibility:hidden;
+    }
+
+.no{
+    display:none!important;
+    }
+
+.cap{
+    text-transform:capitalize;
+    }
+
+.capitalize{
+    text-transform:capitalize;
+    }
+
+.kansai{
+    border-color:#d2625a!important;
+    }
+
+.hokkaido{
+    border-color:#d2625a!important;
+    }
+
+.kyushu{
+    border-color:#d2625a!important;
+    }
+
+.shikoku{
+    border-color:#d2625a!important;
+    }
+    
+.chubu{
+    border-color:#d2625a!important;
+    }
+
+.kanto{
+    border-color:#d2625a!important;
+    }
+
+.okinawa{
+    border-color:#d2625a!important;
+    }
+
+.tohoku{
+    border-color:#d2625a!important;
+    }
+
+/*************/
+/* NAVEGADOR */
+#envoltorio-navegador{
+    display:inline-flex;
+    display:-webkit-inline-flex;
+    width:100%;
+    height:auto;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    border-bottom:1px solid #ddd;
+    }
+/*Configuración del Navegador*/
+#navegador{
+    width:1080px;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    cursor:default;
+    }
+
+/*Logo del Navegador*/
+#navegador .logo{
+    width:200px!important;
+    width:auto;
+    padding-top:11px;
+    }
+
+/*Links Cabecera UL del Navegador*/
+#navegador-links{
+    position:relative;
+    float:right;
+    margin-top:0;
+    padding-top:0;
+    }
+
+/*Cabecera del UL del Navegador*/
+#navegador-ul{
+    display:inline-block;
+    float:left;
+    text-align:center;
+    list-style:none;
+    width:auto;
+    margin-right:10px;
+    padding-left:0;
+    margin-top:7px;
+    }
+
+/*Titulos de la Cabecera del UL del Navegador ---- PAISES, CIUDADES, ANTES DE VIAJAR, BLOG, ECT*/
+#navegador-ul .list{
+    list-style:none;
+    display:inline-block;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:12px;
+    letter-spacing:1px;
+    padding:10.5pt 0 9.5pt;
+    margin:-7px 8pt 0;
+    text-transform:uppercase;
+    border-top:3px solid transparent;
+    }
+
+/*Titulos de la Cabecera del UL visitados del Navegador*/
+#navegador-ul .list:visited{
+    color:#333;
+    }
+
+#navegador-ul .list:link{
+    color:#333;
+    }
+
+/*Color Titulos dentro de la Cabecera del UL del Navegador*/
+#navegador-ul .list:hover{
+    cursor:pointer;
+    transition:0.3s;
+    border-top:3px solid #d2625a;
+    }
+
+/*Acomodo de los SUB LINKS del primer LINK del UL del Navegador --- Paises (acomodarle el tamaño del fondo, etc)*/
+#navegador-sub-link{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:8pt;
+    z-index:1000;
+    max-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+
+
+/*Acomodo de los SUB LINKS del segundo LINK del UL del Navegador --- Ciudades*/
+#navegador-sub-link-2{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:100px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Acomodo de los SUB LINKS del tercer LINK del UL del Navegador --- Antes de Viajar*/
+#navegador-sub-link-3{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:195px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Acomodo de los SUB LINKS del cuarto LINK del UL del Navegador --- Blog*/
+#navegador-sub-link-4{
+    display:none;
+    position:absolute;
+    top:90%;
+    left:260px;
+    z-index:1000;
+    width:auto;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+    padding-left:0;
+    }
+/*Info dentro del SUB LINK del cuarto LINK del UL del Navegador -- Indica la cantidad de posts nuevos en cada sección*/
+#navegador-sub-link-4 .numero{
+    width:auto;
+    height:auto;
+    position:relative;
+    float:right;
+    padding:0 4.5pt;
+    background-color:#fab23a;
+    color:#fff;
+    border-radius:3px;
+    margin-left:17px;
+    }
+/*Configuración LINKS dentro de la Cabecera del UL del Navegador*/
+#navegador-sub-ul{
+    background-color:#fff;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    list-style:none;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:15px;
+    padding:0;
+    }
+/*Forma ordenamiento al pasar por arriba del primer LINK*/
+#list-ciudades:hover #navegador-sub-link{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del segundo LINK*/
+#list-regiones:hover #navegador-sub-link-2{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del tercer LINK*/
+#list-herramientas:hover #navegador-sub-link-3{
+    display:block;
+    }
+/*Forma ordenamiento al pasar por arriba del cuarto LINK*/
+#list-blog:hover #navegador-sub-link-4{
+    display:block;
+    }
+/*Configuración SUB LINKS dentro de la Cabecera del UL del Navegador*/
+#navegador-sub-ul .sub-list{
+    padding:5pt 12pt;
+    text-align:left;
+    transition:0.1s;
+    color:#676A6D;
+    text-transform:none;
+    letter-spacing:0px;
+    }
+
+#navegador-sub-ul .sub-list:hover{
+    background-color:#d2625a;
+    transition:0.1s;
+    color:#fff;
+    cursor:pointer;
+    }
+
+#navegador-sub-ul hr{
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    padding:0;
+    margin:4px 0 0;
+    }
+
+#navegador .nav-li-buscador{
+    list-style:none;
+    float:right;
+    z-index:999;
+    margin-top:13.5px;
+    }
+
+#busqueda{
+    border:none;
+    padding:2px 10px;
+    margin-top:-1.7px;
+    display:left;
+    background-color:transparent;
+    color:#333;
+    width:120px;
+    border-left:2px solid #d2625a;
+    }
+
+#navegador input{
+    position:relative;
+    float:left;
+    color:#555;
+    font-size:14px;
+    font-weight:100;
+    width:65px;
+    }
+
+#navegador input:focus, #navegador input:focus{
+    outline:none;
+    }
+
+#navegador button {
+    position:relative;
+    float:left;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    margin-top:-5px;
+    }
+
+#navegador button:hover{
+    cursor:pointer;
+    }
+
+#navegador button .lupa{
+    color:#333;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    display:left;
+    transition:1s;
+    }
+
+#navegador button:hover .lupa{
+    color:#d2625a;
+    }
+
+#navegador input::-webkit-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador input:-moz-placeholder{
+    color:#333;
+    opacity:0.5;
+    font-weight:100;
+    }
+
+#navegador input::-moz-placeholder{
+    color:#333;
+    opacity:0.5;
+    font-weight:100;
+    }
+
+#navegador input:-ms-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador input::-ms-input-placeholder{
+    color:#333;
+    font-weight:100;
+    opacity:0.5;
+    }
+
+#navegador .lupa{
+    -webkit-transition: all 1s ease;/* Safari and Chrome */
+    -moz-transition: all 1s ease;/* Firefox */
+    -ms-transition: all 1s ease;/* IE 9 */
+    -o-transition: all 1s ease;/* Opera */
+    transition: all 1s ease;
+    }
+
+.lupa:hover {
+    -webkit-transform:scale(1.25);/* Safari and Chrome */
+    -moz-transform:scale(1.25);/* Firefox */
+    -ms-transform:scale(1.25);/* IE 9 */
+    -o-transform:scale(1.25);/* Opera */
+    transform:scale(1.25);
+    }
+
+#segunda{
+    display:none;
+    position:absolute;
+    top:69.5%;
+    left:254px;
+    z-index:1000;
+    min-width:160px;
+    text-align:left;
+    padding:0;
+    margin-top:-12px;
+    padding-left:0;
+    }
+
+#segunda-ul{
+    background-color:#fff;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    list-style:none;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-size:17px;
+    padding:0;
+    }
+
+#segunda-ul .sub-list{
+    padding:5pt 12pt;
+    text-align:left;
+    transition:0.1s;
+    color:#676A6D;
+    text-transform:none;
+    letter-spacing:0px;
+}
+
+#segunda-ul .sub-list:hover{
+    background-color:#c73c32;
+    transition:0.1s;
+    color:#fff;
+    cursor:pointer;
+    }
+
+#list-ingresar{
+    display:block;
+    position:relative;
+    float:right;
+    list-style:none;
+    margin-left:9px;
+    margin-top:14px;
+    margin-right:15px;
+    font-family: 'Raleway', sans-serif;
+    font-size:13px;
+    padding:3px 10px 3px 10px;
+    color:#e5e5e5;
+    border-left:2px solid #fff;
+    letter-spacing:0.7px;
+    transition:.2s;
+    }
+
+#list-ingresar:hover{
+    color:#fff;
+    }
