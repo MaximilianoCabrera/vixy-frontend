@@ -10,9 +10,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { ContenidoComponent } from './contenido/contenido.component';
 import { BarralateralComponent } from './contenido/barralateral/barralateral.component';
 import { FooterComponent } from './footer/footer.component';
-
-
-
+import { NuevoUsuarioComponent } from '../Usuario/nuevoUsuario/nuevoUsuario.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     CabeceraComponent,
     ContenidoComponent,
     BarralateralComponent,
-    FooterComponent
+    FooterComponent,
+    NuevoUsuarioComponent
 ],
   imports: [
     BrowserModule,

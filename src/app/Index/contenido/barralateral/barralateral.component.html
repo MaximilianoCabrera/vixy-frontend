@@ -25,7 +25,7 @@
   <span class="titulo-seccion">Entradas populares</span>
 
   <div *ngFor="let entrada of entradas;let i=index">
-    <a href="//guiadejapon.es/guia-viaje-japon">
+    <a href="//guiadejapon.es/{{entrada.Url}}">
       <div id="blog-populares">
         <img src="../../../../assets/images/{{entrada.Imagen}}">
         <div class="texto">
